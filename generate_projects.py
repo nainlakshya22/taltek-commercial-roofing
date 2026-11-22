@@ -37,7 +37,10 @@ def build_projects_index():
           <!-- 1. Nashville General Hospital -->
           <article class="project-card" data-categories="commercial replacement tpo healthcare">
             <div class="project-thumb">
-              <img src="assets/images/project-nashville-general.svg" alt="Nashville General Hospital Commercial Roofing Project" width="800" height="500">
+              <picture>
+                <source srcset="assets/images/project-nashville-general.webp" type="image/webp">
+                <img src="assets/images/project-nashville-general.jpg" alt="Nashville General Hospital Commercial Roofing Project" width="800" height="500">
+              </picture>
               <span class="project-badge-overlay">HEALTHCARE</span>
             </div>
             <div class="project-info">
@@ -71,7 +74,10 @@ def build_projects_index():
           <!-- 2. Frost Bank Plaza -->
           <article class="project-card" data-categories="commercial waterproofing plaza highrise">
             <div class="project-thumb">
-              <img src="assets/images/project-frost-bank.svg" alt="Frost Bank Plaza Commercial Waterproofing Project" width="800" height="500">
+              <picture>
+                <source srcset="assets/images/project-frost-bank.webp" type="image/webp">
+                <img src="assets/images/project-frost-bank.jpg" alt="Frost Bank Plaza Commercial Waterproofing Project" width="800" height="500">
+              </picture>
               <span class="project-badge-overlay">WATERPROOFING</span>
             </div>
             <div class="project-info">
@@ -105,7 +111,10 @@ def build_projects_index():
           <!-- 3. Krusteaz Manufacturing Facility -->
           <article class="project-card" data-categories="industrial replacement tpo manufacturing">
             <div class="project-thumb">
-              <img src="assets/images/project-krusteaz.svg" alt="Krusteaz Manufacturing Facility Commercial Roofing Project" width="800" height="500">
+              <picture>
+                <source srcset="assets/images/project-krusteaz.webp" type="image/webp">
+                <img src="assets/images/project-krusteaz.jpg" alt="Krusteaz Manufacturing Facility Commercial Roofing Project" width="800" height="500">
+              </picture>
               <span class="project-badge-overlay">INDUSTRIAL</span>
             </div>
             <div class="project-info">
@@ -139,7 +148,10 @@ def build_projects_index():
           <!-- 4. Rapha Center -->
           <article class="project-card" data-categories="commercial replacement tpo">
             <div class="project-thumb">
-              <img src="assets/images/project-rapha-center.svg" alt="Rapha Center Commercial Roofing Project" width="800" height="500">
+              <picture>
+                <source srcset="assets/images/project-rapha-center.webp" type="image/webp">
+                <img src="assets/images/project-rapha-center.jpg" alt="Rapha Center Commercial Roofing Project" width="800" height="500">
+              </picture>
               <span class="project-badge-overlay">COMMERCIAL</span>
             </div>
             <div class="project-info">
@@ -173,7 +185,10 @@ def build_projects_index():
           <!-- 5. Malone Plaza -->
           <article class="project-card" data-categories="commercial replacement epdm retail national">
             <div class="project-thumb">
-              <img src="assets/images/project-malone-plaza.svg" alt="Malone Plaza Commercial EPDM Roofing Project" width="800" height="500">
+              <picture>
+                <source srcset="assets/images/project-malone-plaza.webp" type="image/webp">
+                <img src="assets/images/project-malone-plaza.jpg" alt="Malone Plaza Commercial EPDM Roofing Project" width="800" height="500">
+              </picture>
               <span class="project-badge-overlay">EPDM RUBBER</span>
             </div>
             <div class="project-info">
@@ -253,7 +268,7 @@ def build_case_studies():
                 "Comprehensive perimeter detailing, heavy-gauge coping flashing, and curb waterproofing around critical air-handling units."
             ],
             "warranty_details": "Backed by a Johns Manville 20-Year No Dollar Limit (NDL) Labor and Materials Manufacturer Warranty, alongside TALTEK's standard 2-Year Contractor Workmanship Warranty.",
-            "img": "assets/images/project-nashville-general.svg"
+            "img": "assets/images/project-nashville-general.jpg"
         },
         {
             "slug": "frost-bank-plaza",
@@ -273,7 +288,7 @@ def build_case_studies():
                 "Replacement and recertification of the facility rooftop lightning protection network."
             ],
             "warranty_details": "Protected by a Soprema 20-Year No Dollar Limit (NDL) Manufacturer Warranty guaranteeing complete monolithic watertight protection across the entire plaza deck.",
-            "img": "assets/images/project-frost-bank.svg"
+            "img": "assets/images/project-frost-bank.jpg"
         },
         {
             "slug": "krusteaz-facility",
@@ -293,7 +308,7 @@ def build_case_studies():
                 "Custom sheet metal fabrication and installation of metal drip edges, expansion joints, and continuous gutter collectors."
             ],
             "warranty_details": "20-Year NDL Johns Manville Labor and Materials Manufacturer Warranty paired with TALTEK's 2-Year Contractor Workmanship Warranty.",
-            "img": "assets/images/project-krusteaz.svg"
+            "img": "assets/images/project-krusteaz.jpg"
         },
         {
             "slug": "rapha-center",
@@ -313,7 +328,7 @@ def build_case_studies():
                 "Perimeter edge metal termination and heat-welded flashing wraps around all mechanical penetrations."
             ],
             "warranty_details": "Covered by a 20-Year Warranted Single-Ply Roof System ensuring long-term watertight reliability.",
-            "img": "assets/images/project-rapha-center.svg"
+            "img": "assets/images/project-rapha-center.jpg"
         },
         {
             "slug": "malone-plaza",
@@ -333,7 +348,7 @@ def build_case_studies():
                 "Full project delivery achieved in less than 60 calendar days without a single retail store closure."
             ],
             "warranty_details": "Supported by a 20-Year Warranted Commercial Roof System and verified national account completion certification.",
-            "img": "assets/images/project-malone-plaza.svg"
+            "img": "assets/images/project-malone-plaza.jpg"
         }
     ]
 
@@ -368,7 +383,7 @@ def build_case_studies():
               <img src="../{c["img"]}" alt="{c["title"]} Commercial Roofing Case Study" width="800" height="500" style="width: 100%; height: auto; max-height: 550px; object-fit: cover;">
             </div>
 
-            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: var(--space-10); align-items: start;">
+            <div class="editorial-grid">
               <!-- Left Column: Editorial Details -->
               <div>
                 <h2 style="font-size: 24px; color: var(--text-primary); margin-bottom: 12px;">Project Overview</h2>

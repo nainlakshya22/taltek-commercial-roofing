@@ -558,7 +558,23 @@ def build_individual_services():
         }
     ]
 
+    service_photos = {
+        "commercial-roofing": "assets/images/commercial-tpo-installation.jpg",
+        "industrial-roofing": "assets/images/heavy-industrial-roof.jpg",
+        "roof-replacement": "assets/images/commercial-construction-site.jpg",
+        "roof-repair": "assets/images/commercial-contractors.jpg",
+        "emergency-services": "assets/images/heavy-industrial-roof.jpg",
+        "preventative-maintenance": "assets/images/roof-assessment-inspector.jpg",
+        "tpo-roofing": "assets/images/commercial-tpo-installation.jpg",
+        "epdm-roofing": "assets/images/heavy-industrial-roof.jpg",
+        "pvc-roofing": "assets/images/heavy-industrial-roof.jpg",
+        "storm-protection": "assets/images/commercial-construction-site.jpg",
+        "roof-assessment": "assets/images/roof-assessment-inspector.jpg",
+        "gutter-services": "assets/images/commercial-contractors.jpg"
+    }
+
     for s in services_data:
+        photo_url = service_photos.get(s["slug"], "assets/images/commercial-contractors.jpg")
         specs_rows = "".join([f"""
           <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding: 10px 0; font-size: 13px;">
             <strong style="color: var(--text-primary);">{k}:</strong>
@@ -585,9 +601,14 @@ def build_individual_services():
         <!-- Main Editorial Content & Technical Specs -->
         <section class="section bg-surface" style="border-top: 1px solid var(--border-subtle);">
           <div class="container">
-            <div style="display: grid; grid-template-columns: 2fr 1fr; gap: var(--space-10); align-items: start;">
+            <div class="editorial-grid">
               <!-- Left: Editorial Text & Diagrams -->
               <div>
+                <!-- Primary Service Field Photo -->
+                <div style="margin-bottom: 32px; border: 1px solid var(--border-medium); border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-md);">
+                  <img src="../{photo_url}" alt="{s["title"]} Field Implementation" width="800" height="450" style="width: 100%; height: auto; max-height: 420px; object-fit: cover;">
+                </div>
+
                 <div class="editorial-body" style="color: var(--text-secondary); font-size: 15px; line-height: 1.8;">
                   {s["body"]}
                 </div>

@@ -68,14 +68,14 @@ def render_page(filepath, title, desc, canonical_slug, content_html, path_depth=
   <meta property="og:type" content="website">
   <meta property="og:title" content="{title} | TALTEK Commercial Roofing">
   <meta property="og:description" content="{desc}">
-  <meta property="og:image" content="{root}assets/images/hero-rooftop.svg">
+  <meta property="og:image" content="{root}assets/images/hero-rooftop.jpg">
   <meta property="og:url" content="https://taltekroofing.com/{canonical_slug}.html">
   <meta property="og:site_name" content="TALTEK Commercial Roofing">
   
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{title} | TALTEK Commercial Roofing">
   <meta name="twitter:description" content="{desc}">
-  <meta name="twitter:image" content="{root}assets/images/hero-rooftop.svg">
+  <meta name="twitter:image" content="{root}assets/images/hero-rooftop.jpg">
   
   <!-- Theme Colors -->
   <meta name="theme-color" content="#0A0C0E">

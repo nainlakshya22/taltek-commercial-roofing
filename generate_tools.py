@@ -239,7 +239,7 @@ def build_quote_page():
 
               <div class="form-group">
                 <label class="form-label">Property Classification *</label>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px;">
                   <label class="custom-radio">
                     <input type="radio" name="property_type" value="Commercial Office" checked>
                     <span>Commercial Office</span>
@@ -525,7 +525,7 @@ def build_financing_page():
 
         <!-- FEATURE 06: FINANCING CALCULATOR -->
         <div class="financing-calculator-box" id="financing-calc-form">
-          <div style="display: grid; grid-template-columns: 1.4fr 1fr; gap: var(--space-8);">
+          <div class="financing-grid" style="display: grid; grid-template-columns: 1.4fr 1fr; gap: var(--space-8);">
             <!-- Left: Inputs -->
             <div>
               <div class="form-group">
@@ -634,7 +634,7 @@ def build_service_areas_page():
         </div>
 
         <!-- FEATURE 08: MAP & REGIONAL HUB DIRECTORY -->
-        <div style="display: grid; grid-template-columns: 1.8fr 1.2fr; gap: var(--space-8); margin-bottom: var(--space-12);">
+        <div class="map-grid" style="display: grid; grid-template-columns: 1.8fr 1.2fr; gap: var(--space-8); margin-bottom: var(--space-12);">
           <div class="service-map-wrapper">
             <img src="assets/images/southeast-map.svg" alt="Interactive vector map of TALTEK 15 Southeastern operating states" class="taltek-service-map" width="1000" height="680" style="width: 100%; height: auto;">
           </div>

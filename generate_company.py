@@ -48,7 +48,10 @@ def build_about_page():
 
           <div>
             <div style="border: 1px solid var(--border-medium); border-radius: 8px; overflow: hidden; box-shadow: var(--shadow-lg);">
-              <img src="assets/images/hero-rooftop.svg" alt="TALTEK Industrial Infrastructure" width="1000" height="650" style="width: 100%; height: auto;">
+              <picture>
+                <source srcset="assets/images/commercial-contractors.webp" type="image/webp">
+                <img src="assets/images/commercial-contractors.jpg" alt="TALTEK Certified Commercial Roofing Contractors On Site" width="1000" height="650" style="width: 100%; height: auto; object-fit: cover;">
+              </picture>
             </div>
           </div>
         </div>
@@ -570,6 +573,64 @@ def build_contact_page():
                 &check; Message received securely. A TALTEK representative will respond within 2 to 4 business hours.
               </div>
             </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHASE 3: GOOGLE MAPS & BUSINESS LOCATION SECTION -->
+    <section class="section bg-surface" id="location-map" aria-label="TALTEK Headquarters Google Maps Location" style="border-top: 1px solid var(--border-subtle);">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="eyebrow">Goodlettsville Headquarters &amp; Operations Center</span>
+          <h2 class="section-title">Visit Our Headquarters</h2>
+          <p class="section-desc">
+            Conveniently situated in Goodlettsville, Tennessee, providing central logistics dispatch for commercial roofing crews and emergency response units throughout the Southeast.
+          </p>
+        </div>
+
+        <div class="map-location-card">
+          <!-- Location Details & Action Strip -->
+          <div class="map-info-bar">
+            <div class="map-address-block">
+              <div class="card-top-tag">[ CORPORATE GEOLOCATION ]</div>
+              <h3 style="font-size: 18px; color: var(--text-primary); margin: 6px 0;">1214 S. Dickerson Rd, Goodlettsville, TN 37072</h3>
+              <p style="font-size: 13px; color: var(--text-secondary); margin: 0;">
+                Serving Davidson, Sumner, Robertson, Wilson, Williamson, and 15 Southeastern States.
+              </p>
+            </div>
+            <div class="map-actions-group">
+              <a href="https://www.google.com/maps/dir/?api=1&destination=1214+S+Dickerson+Rd+Goodlettsville+TN+37072+USA" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+                Get Directions
+              </a>
+              <a href="https://www.google.com/maps/search/?api=1&query=1214+S+Dickerson+Rd+Goodlettsville+TN+37072+USA" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+                Open in Google Maps
+              </a>
+            </div>
+          </div>
+
+          <!-- Responsive Google Maps Embed with Fallback -->
+          <div class="map-embed-wrapper">
+            <iframe 
+              src="https://maps.google.com/maps?q=1214+S+Dickerson+Rd,+Goodlettsville,+TN+37072&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed" 
+              class="google-map-iframe" 
+              loading="lazy" 
+              title="TALTEK Commercial Roofing Headquarters Map Location" 
+              aria-label="Interactive Google Map showing TALTEK Commercial Roofing headquarters in Goodlettsville, TN"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <!-- Offline / No-Script Fallback -->
+            <noscript>
+              <div class="map-fallback-box">
+                <p><strong>TALTEK Commercial Roofing Headquarters</strong></p>
+                <p>1214 S. Dickerson Rd, Goodlettsville, TN 37072, USA</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=1214+S+Dickerson+Rd+Goodlettsville+TN+37072+USA" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  View on Google Maps &rarr;
+                </a>
+              </div>
+            </noscript>
           </div>
         </div>
       </div>

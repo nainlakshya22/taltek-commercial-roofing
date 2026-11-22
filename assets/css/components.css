@@ -46,6 +46,30 @@
   gap: var(--space-4);
 }
 
+@media (max-width: 900px) {
+  .utility-left {
+    display: none; /* Hide secondary location/review stats on mobile to prevent overflow */
+  }
+  .utility-inner {
+    justify-content: center;
+  }
+  .utility-right {
+    justify-content: center;
+    width: 100%;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-utility-bar {
+    padding: 4px 0;
+    font-size: 11px;
+  }
+  .utility-right .utility-link:last-child {
+    display: none; /* Hide email on narrow screens so single phone line fits centered without clipping */
+  }
+}
+
 .utility-link {
   display: inline-flex;
   align-items: center;
@@ -212,13 +236,27 @@
   }
 }
 
+@media (max-width: 540px) {
+  .header-main {
+    height: 64px;
+  }
+  .brand-logo-img {
+    height: 34px;
+    max-width: 160px;
+  }
+  .header-actions .btn {
+    display: none; /* Hide top duplicate quote button on mobile since sticky bottom bar handles it */
+  }
+}
+
 /* Mobile Drawer */
 .mobile-drawer {
   position: fixed;
   top: 0;
   right: -100%;
   width: 100%;
-  max-width: 400px;
+  max-width: 380px;
+  max-width: min(380px, 100vw);
   height: 100vh;
   background-color: var(--bg-surface);
   border-left: 1px solid var(--border-medium);
@@ -381,6 +419,20 @@
 .btn-lg {
   padding: 18px 36px;
   font-size: var(--text-base);
+}
+
+@media (max-width: 600px) {
+  .btn {
+    white-space: normal;
+    padding: 12px 18px;
+    max-width: 100%;
+    word-break: break-word;
+  }
+  .btn-lg {
+    padding: 14px 20px;
+    font-size: var(--text-sm);
+    width: 100%;
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -644,7 +696,22 @@ select.form-control {
     display: block;
   }
   body {
-    padding-bottom: 65px; /* Offset for sticky bar */
+    padding-bottom: 75px; /* Offset for sticky bar */
+  }
+  .chat-widget-container {
+    bottom: 76px !important;
+    right: 16px !important;
+  }
+  .chat-toggle-btn {
+    width: 48px;
+    height: 48px;
+  }
+  .chat-panel {
+    bottom: 58px;
+    right: 0;
+    width: calc(100vw - 32px);
+    max-width: 360px;
+    height: calc(100vh - 160px);
   }
 }
 
@@ -912,16 +979,36 @@ select.form-control {
 }
 
 @media (max-width: 900px) {
+  .cookie-banner {
+    bottom: 72px !important;
+    left: 10px !important;
+    right: 10px !important;
+    padding: 14px !important;
+  }
   .cookie-banner-inner {
     flex-direction: column;
     align-items: flex-start;
+    gap: 12px;
   }
   .cookie-actions {
     width: 100%;
     flex-wrap: wrap;
+    gap: 8px;
   }
   .cookie-actions .btn {
     flex: 1;
+    min-width: 90px;
+    padding: 10px 12px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cookie-actions {
+    flex-direction: column;
+  }
+  .cookie-actions .btn {
+    width: 100%;
   }
 }
 
@@ -1161,4 +1248,101 @@ select.form-control {
 .footer-legal-links a:hover,
 .footer-legal-links button:hover {
   color: var(--copper);
+}
+
+@media (max-width: 600px) {
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .footer-legal-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   8. GOOGLE MAPS LOCATION & GEOLOCATION SECTION
+   -------------------------------------------------------------------------- */
+.map-location-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  margin-top: var(--space-8);
+}
+
+.map-info-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-6);
+  border-bottom: 1px solid var(--border-subtle);
+  background-color: var(--bg-surface);
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.map-address-block {
+  flex: 1;
+  min-width: 260px;
+}
+
+.map-actions-group {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.map-embed-wrapper {
+  position: relative;
+  width: 100%;
+  height: 460px;
+  background-color: #0E1216;
+}
+
+.google-map-iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  filter: contrast(1.05);
+}
+
+.map-fallback-box {
+  padding: 32px;
+  text-align: center;
+  color: var(--text-secondary);
+  background: var(--bg-card);
+}
+
+@media (max-width: 768px) {
+  .map-embed-wrapper {
+    height: 320px;
+  }
+  .map-info-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 14px;
+  }
+  .map-actions-group {
+    width: 100%;
+  }
+  .map-actions-group .btn {
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-embed-wrapper {
+    height: 250px;
+  }
+  .map-actions-group {
+    flex-direction: column;
+  }
+  .map-actions-group .btn {
+    width: 100%;
+  }
 }
