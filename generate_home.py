@@ -511,9 +511,66 @@ def build_home():
         </div>
 
         <div class="map-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: var(--space-8); align-items: start;">
-          <!-- Vector Map SVG -->
-          <div class="service-map-wrapper">
-            <img src="assets/images/southeast-map.svg" alt="Interactive vector map of TALTEK 15 Southeastern operating states" class="taltek-service-map" width="1000" height="680" style="width: 100%; height: auto;">
+          <!-- Dual-Mode Regional Operations Map (Live Google Maps & Clear Geographic Network) -->
+          <div class="service-map-wrapper" style="background: var(--bg-card); border: 1px solid var(--border-medium); border-radius: 8px; padding: 16px; overflow: hidden;">
+            <!-- Map Mode Header & Switcher -->
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 14px; border-bottom: 1px solid var(--border-subtle); padding-bottom: 12px;">
+              <div>
+                <div style="font-family: var(--font-heading); font-size: 15px; font-weight: 800; color: var(--text-primary); text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; gap: 8px;">
+                  <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--copper); box-shadow: 0 0 8px var(--copper);"></span>
+                  Southeastern Regional Operations Map
+                </div>
+                <div style="font-family: var(--font-mono); font-size: 11px; color: var(--text-secondary); margin-top: 2px;">
+                  1214 S. Dickerson Rd, Goodlettsville, TN 37072 &bull; 15 Southeastern Operating States
+                </div>
+              </div>
+              
+              <!-- Mode Toggle Buttons -->
+              <div class="map-view-toggle" style="display: inline-flex; background: #0A0C0E; border: 1px solid var(--border-subtle); border-radius: 4px; padding: 3px; gap: 4px;">
+                <button type="button" class="btn-map-mode active" id="btn-show-gmap-home" onclick="switchMapModeHome('gmap')" style="background: var(--copper); color: #FFF; border: none; padding: 6px 14px; font-size: 11px; font-weight: 700; border-radius: 3px; cursor: pointer; text-transform: uppercase; font-family: var(--font-heading); letter-spacing: 0.05em;">
+                  Live Google Maps
+                </button>
+                <button type="button" class="btn-map-mode" id="btn-show-hubs-home" onclick="switchMapModeHome('hubs')" style="background: transparent; color: var(--text-secondary); border: none; padding: 6px 14px; font-size: 11px; font-weight: 700; border-radius: 3px; cursor: pointer; text-transform: uppercase; font-family: var(--font-heading); letter-spacing: 0.05em;">
+                  Regional Hubs Network
+                </button>
+              </div>
+            </div>
+
+            <!-- View 1: Interactive Live Google Maps Embed -->
+            <div id="map-view-gmap-home" class="map-view-pane" style="position: relative; width: 100%; border-radius: 6px; overflow: hidden; border: 1px solid var(--border-subtle);">
+              <iframe 
+                src="https://maps.google.com/maps?q=1214+S+Dickerson+Rd,+Goodlettsville,+TN+37072&amp;t=&amp;z=6&amp;ie=UTF8&amp;iwloc=&amp;output=embed" 
+                width="100%" 
+                height="500" 
+                style="border:0; width: 100%; height: 500px; display: block;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade" 
+                title="TALTEK Commercial Roofing Headquarters - Goodlettsville, TN Google Maps">
+              </iframe>
+              <div class="map-action-bar" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; background: #0A0C0E; padding: 12px 16px; border-top: 1px solid var(--border-subtle); font-size: 13px;">
+                <div>
+                  <span style="color: var(--copper); font-weight: 700;">★ Corporate Headquarters:</span>
+                  <span style="color: var(--text-primary); margin-left: 6px;">1214 S. Dickerson Rd, Goodlettsville, TN 37072</span>
+                </div>
+                <div style="display: flex; gap: 8px;">
+                  <a href="https://www.google.com/maps/dir/?api=1&amp;destination=1214+S+Dickerson+Rd+Goodlettsville+TN+37072+USA" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="padding: 6px 14px; font-size: 11px;">Get Directions</a>
+                  <a href="https://www.google.com/maps/search/?api=1&amp;query=1214+S+Dickerson+Rd+Goodlettsville+TN+37072+USA" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" style="padding: 6px 14px; font-size: 11px;">Open in Google Maps</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- View 2: Clear Geographic Locations Map Image -->
+            <div id="map-view-hubs-home" class="map-view-pane" style="display: none; position: relative; width: 100%; border-radius: 6px; overflow: hidden; border: 1px solid var(--border-subtle);">
+              <picture>
+                <source srcset="assets/images/southeast-map.webp" type="image/webp">
+                <img src="assets/images/southeast-map.png" alt="Clear geographic map of TALTEK 15 Southeastern operating states and Goodlettsville HQ" class="taltek-service-map" width="1000" height="680" style="width: 100%; height: auto; display: block;">
+              </picture>
+              <div style="background: #0A0C0E; padding: 12px 16px; border-top: 1px solid var(--border-subtle); font-size: 12px; color: var(--text-secondary); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                <span>Showing 7 verified regional hubs (TN, AL, LA, MS, NC, SC, VA) with 500-mile emergency deployment radius</span>
+                <span style="color: var(--copper); font-weight: 700;">24/7 Rapid Dispatch: (615) 448-6349</span>
+              </div>
+            </div>
           </div>
 
           <!-- Dynamic State Info Card -->
@@ -532,6 +589,26 @@ def build_home():
             </div>
           </div>
         </div>
+
+        <script>
+          function switchMapModeHome(mode) {
+            const gmap = document.getElementById('map-view-gmap-home');
+            const hubs = document.getElementById('map-view-hubs-home');
+            const btnG = document.getElementById('btn-show-gmap-home');
+            const btnH = document.getElementById('btn-show-hubs-home');
+            if (mode === 'gmap') {
+              if (gmap) gmap.style.display = 'block';
+              if (hubs) hubs.style.display = 'none';
+              if (btnG) { btnG.style.background = 'var(--copper)'; btnG.style.color = '#FFF'; }
+              if (btnH) { btnH.style.background = 'transparent'; btnH.style.color = 'var(--text-secondary)'; }
+            } else {
+              if (gmap) gmap.style.display = 'none';
+              if (hubs) hubs.style.display = 'block';
+              if (btnG) { btnG.style.background = 'transparent'; btnG.style.color = 'var(--text-secondary)'; }
+              if (btnH) { btnH.style.background = 'var(--copper)'; btnH.style.color = '#FFF'; }
+            }
+          }
+        </script>
 
         <div style="margin-top: var(--space-6); text-align: center;">
           <a href="service-areas.html" class="btn btn-outline">Explore Complete Service Coverage &amp; Licensing Disclosures &rarr;</a>
