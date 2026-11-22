@@ -18,6 +18,7 @@
   "rewrites": [
     { "source": "/api/quote", "destination": "/api/quote.py" },
     { "source": "/api/privacy-request", "destination": "/api/privacy_request.py" },
+    { "source": "/api/privacy_request", "destination": "/api/privacy_request.py" },
     { "source": "/api/health", "destination": "/api/health.py" }
   ]
 }

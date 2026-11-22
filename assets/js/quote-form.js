@@ -180,25 +180,46 @@ function initQuoteWizard() {
       const dataObj = {};
       formData.forEach((value, key) => { dataObj[key] = value; });
 
+      // Submit to backend
       try {
-        // Try posting to local/server endpoint
         const response = await fetch('/api/quote', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(dataObj)
         });
+
         const result = await response.json();
-        console.info('Quote submitted successfully:', result);
+
+        if (response.ok && result.success) {
+          // Genuine server reference ID
+          const refCodeDisplay = document.getElementById('confirmation-ref-code');
+          if (refCodeDisplay) refCodeDisplay.textContent = result.reference;
+
+          const dispatchMsg = document.getElementById('confirmation-dispatch-msg');
+          if (dispatchMsg && result.message) {
+            dispatchMsg.textContent = result.message;
+          }
+
+          goToStep(5);
+        } else {
+          // Server returned validation or rate limit error
+          const errMsg = result.error || (result.errors ? result.errors.join(' ') : 'Unable to record inspection request.');
+          alert('Submission Notice: ' + errMsg);
+          btnSubmit.disabled = false;
+          btnSubmit.textContent = 'Submit Inspection Request';
+        }
       } catch (err) {
-        console.info('Simulated secure transmission successful (local fallback):', dataObj);
+        console.error('Network or server error during quote submission:', err);
+        const errBanner = document.getElementById('quote-error-banner');
+        if (errBanner) {
+          errBanner.style.display = 'block';
+          errBanner.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          alert('Dispatch Network Notice: Unable to connect to TALTEK dispatch servers. To ensure immediate priority scheduling, please call our 24/7 direct line at (615) 448-6349 or email sales@taltekroofing.com.');
+        }
+        btnSubmit.disabled = false;
+        btnSubmit.textContent = 'Retry Submission';
       }
-
-      // Generate verification code
-      const refCode = 'TK-' + Math.floor(100000 + Math.random() * 900000);
-      const refCodeDisplay = document.getElementById('confirmation-ref-code');
-      if (refCodeDisplay) refCodeDisplay.textContent = refCode;
-
-      goToStep(5);
     });
   }
 

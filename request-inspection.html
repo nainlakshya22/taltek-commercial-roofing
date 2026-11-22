@@ -237,6 +237,11 @@
           </div>
 
           <form id="commercial-quote-form" class="wizard-content" novalidate>
+            <!-- Error Alert Banner -->
+            <div id="quote-error-banner" style="display:none; background: rgba(239, 68, 68, 0.15); border: 1px solid var(--status-danger); color: #FCA5A5; padding: 16px; border-radius: 4px; margin-bottom: 20px; font-size: 13px;">
+              <strong>DISPATCH CONNECTION NOTICE:</strong> Unable to connect to the TALTEK dispatch servers. Your request was NOT transmitted. To secure immediate priority scheduling or report an emergency, please contact our 24/7 direct line at <a href="tel:+16154486349" style="color: #FFFFFF; text-decoration: underline; font-weight: 700;">+1 (615) 448-6349</a> or email <a href="mailto:sales@taltekroofing.com" style="color: #FFFFFF; text-decoration: underline;">sales@taltekroofing.com</a>.
+            </div>
+
             <!-- Honeypot anti-spam trap (hidden from users, bot trap) -->
             <input type="text" name="hp_website_title" style="display:none !important;" tabindex="-1" autocomplete="off" aria-hidden="true">
 
@@ -481,8 +486,8 @@
                 <div style="font-family: var(--font-mono); font-size: 14px; color: var(--copper); margin-bottom: 16px;">
                   REFERENCE TRACKING ID: <span id="confirmation-ref-code">TK-894721</span>
                 </div>
-                <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 24px; line-height: 1.7;">
-                  Thank you. Your commercial roofing assessment request has been transmitted securely to our Goodlettsville, TN engineering dispatch desk. A certified TALTEK commercial roofing estimator will contact your office within 2 to 4 business hours to confirm site access details and finalize your inspection schedule.
+                <p id="confirmation-dispatch-msg" style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 24px; line-height: 1.7;">
+                  Thank you. Your commercial roofing assessment request has been recorded into the TALTEK dispatch register. A certified commercial roofing estimator will review facility specifications and contact your office to confirm site access details.
                 </p>
                 <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
                   <a href="tel:+16154486349" class="btn btn-secondary">Direct Dispatch: (615) 448-6349</a>

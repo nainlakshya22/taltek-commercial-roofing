@@ -35,24 +35,36 @@ function initPrivacyRequestForm() {
     formData.forEach((val, key) => { dataObj[key] = val; });
 
     try {
-      await fetch('/api/privacy-request', {
+      const response = await fetch('/api/privacy-request', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(dataObj)
       });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        if (trackingNumberDisplay) {
+          trackingNumberDisplay.textContent = result.tracking_code;
+        }
+        form.style.display = 'none';
+        if (confirmationBlock) confirmationBlock.style.display = 'block';
+        confirmationBlock.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        const errMsg = result.error || (result.errors ? result.errors.join(' ') : 'Unable to record privacy request.');
+        alert('Privacy Portal Notice: ' + errMsg);
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Submit Privacy Rights Request';
+        }
+      }
     } catch (err) {
-      console.info('Privacy request recorded (local fallback mode):', dataObj);
+      console.error('Privacy request transmission error:', err);
+      alert('Network Notice: Unable to connect to TALTEK compliance register. Please contact our Privacy Compliance Officer directly at sales@taltekroofing.com or +1 (615) 448-6349.');
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Retry Submission';
+      }
     }
-
-    // Generate compliant tracking reference: TIPA-YYMMDD-XXXX
-    const dateStr = new Date().toISOString().slice(2, 10).replace(/-/g, '');
-    const randCode = Math.floor(1000 + Math.random() * 9000);
-    const trackingCode = `TIPA-${dateStr}-${randCode}`;
-
-    if (trackingNumberDisplay) trackingNumberDisplay.textContent = trackingCode;
-    form.style.display = 'none';
-    if (confirmationBlock) confirmationBlock.style.display = 'block';
-
-    confirmationBlock.scrollIntoView({ behavior: 'smooth' });
   });
 }

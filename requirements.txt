@@ -1,0 +1,3 @@
+# TALTEK Commercial Roofing - Python Serverless Runtime Dependencies
+# Standard Library Used (http.server, sqlite3, json, hashlib, urllib)
+# No external C-extensions required for deployment
