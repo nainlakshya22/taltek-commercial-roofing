@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Commercial industrial rooftop infrastructure">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#080A0C" />
+      <stop offset="45%" stop-color="#14181D" />
+      <stop offset="75%" stop-color="#241E1C" />
+      <stop offset="100%" stop-color="#3A2418" />
+    </linearGradient>
+    <linearGradient id="horizonGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D87535" stop-opacity="0.1" />
+      <stop offset="50%" stop-color="#D87535" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#D87535" stop-opacity="0.1" />
+    </linearGradient>
+    <linearGradient id="roofGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E2328" />
+      <stop offset="50%" stop-color="#16191D" />
+      <stop offset="100%" stop-color="#0C0E10" />
+    </linearGradient>
+    <linearGradient id="membraneHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A7ADB2" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#1E2328" stop-opacity="0.05" />
+    </linearGradient>
+    <pattern id="gridPattern" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#252A30" stroke-width="0.75" stroke-opacity="0.5"/>
+    </pattern>
+    <pattern id="isoGrid" width="120" height="70" patternUnits="userSpaceOnUse">
+      <path d="M 0 35 L 60 0 L 120 35 L 60 70 Z" fill="none" stroke="#2A313A" stroke-width="0.8" stroke-opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <!-- Sky & Atmosphere -->
+  <rect width="1920" height="1080" fill="url(#skyGrad)"/>
+  
+  <!-- Subtle Horizon Glow -->
+  <ellipse cx="960" cy="520" rx="900" ry="220" fill="url(#horizonGlow)" />
+
+  <!-- Distant Industrial Skyline / Crane Silhouettes -->
+  <g opacity="0.35" fill="#13171B">
+    <!-- Building silhouettes -->
+    <rect x="140" y="440" width="160" height="180" />
+    <rect x="220" y="410" width="120" height="210" />
+    <rect x="420" y="460" width="180" height="160" />
+    <rect x="780" y="430" width="220" height="190" />
+    <rect x="1100" y="450" width="140" height="170" />
+    <rect x="1320" y="420" width="190" height="200" />
+    <rect x="1600" y="440" width="220" height="180" />
+    <!-- Tower Crane lines -->
+    <path d="M 340 540 L 340 320 L 460 300 M 340 320 L 290 330" stroke="#485058" stroke-width="2"/>
+    <path d="M 1240 550 L 1240 300 L 1380 280 M 1240 300 L 1190 310" stroke="#485058" stroke-width="2"/>
+  </g>
+
+  <!-- Commercial Flat Roof Structure in Perspective -->
+  <!-- Parapet wall top edge -->
+  <polygon points="0,520 1920,480 1920,535 0,580" fill="#20252B" stroke="#363E46" stroke-width="1.5"/>
+  <!-- Copper coping flashing cap -->
+  <polygon points="0,520 1920,480 1920,488 0,528" fill="#D87535" opacity="0.85"/>
+
+  <!-- Vast Commercial TPO/EPDM Roof Deck -->
+  <polygon points="0,580 1920,535 1920,1080 0,1080" fill="url(#roofGrad)"/>
+  
+  <!-- Architectural Coordinate Grid Overlay across roof -->
+  <polygon points="0,580 1920,535 1920,1080 0,1080" fill="url(#isoGrid)"/>
+
+  <!-- Precision Heat-Welded Membrane Seam Lines in Perspective -->
+  <g stroke="#3A434C" stroke-width="1.2" opacity="0.65">
+    <line x1="200" y1="575" x2="100" y2="1080" />
+    <line x1="450" y1="568" x2="380" y2="1080" />
+    <line x1="720" y1="562" x2="700" y2="1080" stroke="#D87535" stroke-width="1.5" opacity="0.5"/>
+    <line x1="1020" y1="556" x2="1080" y2="1080" />
+    <line x1="1320" y1="549" x2="1460" y2="1080" />
+    <line x1="1620" y1="542" x2="1820" y2="1080" />
+  </g>
+
+  <!-- Rooftop HVAC / Industrial Infrastructure Elements with dimension marks -->
+  <g opacity="0.85">
+    <!-- Unit 1 -->
+    <rect x="300" y="660" width="220" height="120" fill="#1C2025" stroke="#373F47" stroke-width="1.5" rx="4"/>
+    <rect x="320" y="680" width="80" height="70" fill="#121518" stroke="#2B3239"/>
+    <circle cx="460" cy="715" r="32" fill="#14181B" stroke="#D87535" stroke-width="1.5" stroke-dasharray="6,4"/>
+    <text x="320" y="650" font-family="'Inter', monospace" font-size="11" fill="#A7ADB2" letter-spacing="1.5">HVAC-RTU 01 // VIBRATION ISOLATED</text>
+    
+    <!-- Unit 2 (Distant) -->
+    <rect x="1200" y="590" width="160" height="90" fill="#191D21" stroke="#323A42" stroke-width="1.5" rx="3"/>
+    <circle cx="1310" cy="635" r="24" fill="#111417" stroke="#3D454E"/>
+    <text x="1200" y="582" font-family="'Inter', monospace" font-size="9" fill="#757D85" letter-spacing="1">CONDENSER-R3 // CURB MOUNTED</text>
+
+    <!-- Commercial Skylights / Smoke Vents -->
+    <polygon points="760,720 900,720 940,780 720,780" fill="#1E2328" stroke="#3A434C" stroke-width="1.2"/>
+    <polygon points="775,730 885,730 920,770 740,770" fill="#2A333C" opacity="0.7"/>
+    <line x1="720" y1="780" x2="940" y2="780" stroke="#D87535" stroke-width="2"/>
+    <text x="730" y="805" font-family="'Inter', monospace" font-size="10" fill="#A7ADB2" letter-spacing="1.5">ROOFLIGHT TRANSLUCENT BAY // FALL PROTECTION INTEGRATED</text>
+  </g>
+
+  <!-- Technical Telemetry & Engineering HUD overlay -->
+  <g font-family="'Inter', monospace" font-size="11" fill="#A7ADB2" opacity="0.8">
+    <text x="60" y="80" fill="#D87535" font-weight="700" letter-spacing="2">SYS://TALTEK-AERIAL-MONITOR</text>
+    <text x="60" y="105" letter-spacing="1">COORD: 36.3134° N, 86.7136° W</text>
+    <text x="60" y="125" letter-spacing="1">HEADQUARTERS: GOODLETTSVILLE, TN</text>
+    <text x="60" y="145" letter-spacing="1">MEMBRANE SPEC: 60-MIL TPO / CLASS A RATED</text>
+    
+    <!-- Top Right Telemetry -->
+    <text x="1600" y="80" text-anchor="end" fill="#F5F4F0" font-weight="600" letter-spacing="2">NDL WARRANTY VERIFICATION</text>
+    <text x="1600" y="105" text-anchor="end" letter-spacing="1">WIND SPEED DESIGN: 120 MPH</text>
+    <text x="1600" y="125" text-anchor="end" fill="#D87535" letter-spacing="1">CLIENT BASE: 10,000+ PROJECTS</text>
+  </g>
+
+  <!-- Crosshair and calibration marks -->
+  <g stroke="#D87535" stroke-width="1" opacity="0.5">
+    <line x1="960" y1="460" x2="960" y2="480" />
+    <line x1="960" y1="520" x2="960" y2="540" />
+    <line x1="930" y1="500" x2="950" y2="500" />
+    <line x1="970" y1="500" x2="990" y2="500" />
+    <circle cx="960" cy="500" r="16" fill="none" stroke-dasharray="2,2"/>
+  </g>
+</svg>

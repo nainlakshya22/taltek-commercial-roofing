@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Krusteaz Manufacturing Facility Commercial Roofing Project">
+  <defs>
+    <linearGradient id="p3Sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#111317"/><stop offset="100%" stop-color="#222730"/>
+    </linearGradient>
+    <linearGradient id="megaRoof" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EEF2F6"/><stop offset="100%" stop-color="#BAC4CE"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#p3Sky)"/>
+  <!-- Industrial Plant Structure -->
+  <polygon points="30,260 770,260 770,480 30,480" fill="#181C22" stroke="#2E3540" stroke-width="2"/>
+  <!-- Massive Warehouse Roof in Deep Perspective -->
+  <polygon points="30,260 770,260 680,100 120,100" fill="url(#megaRoof)" stroke="#8FA0B2" stroke-width="2"/>
+  <!-- Grid of repetitive industrial vents and skylights -->
+  <g fill="#404A58" opacity="0.7">
+    <rect x="200" y="130" width="25" height="15" rx="2"/><rect x="300" y="130" width="25" height="15" rx="2"/>
+    <rect x="400" y="130" width="25" height="15" rx="2"/><rect x="500" y="130" width="25" height="15" rx="2"/>
+    <rect x="600" y="130" width="25" height="15" rx="2"/>
+    <rect x="180" y="180" width="35" height="20" rx="2"/><rect x="300" y="180" width="35" height="20" rx="2"/>
+    <rect x="420" y="180" width="35" height="20" rx="2"/><rect x="540" y="180" width="35" height="20" rx="2"/>
+  </g>
+  <!-- Longitude Seams across 205k sqft -->
+  <g stroke="#7F8E9E" stroke-width="1.5">
+    <line x1="250" y1="100" x2="200" y2="260"/>
+    <line x1="400" y1="100" x2="400" y2="260" stroke="#D87535" stroke-width="2"/>
+    <line x1="550" y1="100" x2="600" y2="260"/>
+  </g>
+  <!-- Badge -->
+  <rect x="40" y="30" width="340" height="58" fill="#0A0C0E" rx="4" stroke="#D87535" stroke-width="1.5"/>
+  <text x="56" y="54" font-family="'Inter', sans-serif" font-weight="800" font-size="13" fill="#F5F4F0" letter-spacing="1">KRUSTEAZ MANUFACTURING</text>
+  <text x="56" y="73" font-family="'Inter', sans-serif" font-size="11" fill="#D87535">205,869 SQ FT • JM TPO SYSTEM • HOPKINSVILLE, KY</text>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Damaged commercial roof prior to TALTEK replacement">
+  <defs>
+    <radialGradient id="pondGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#121815" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#1A221E" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#2D332F" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="agedDeck" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3D3A37"/>
+      <stop offset="50%" stop-color="#32302D"/>
+      <stop offset="100%" stop-color="#262422"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="650" fill="url(#agedDeck)"/>
+  
+  <!-- Texture & Weathering lines -->
+  <g stroke="#1F1D1B" stroke-width="1.5" opacity="0.7">
+    <!-- Severe alligatoring and surface cracks -->
+    <path d="M 50 120 Q 150 140 220 110 T 380 160 T 520 120 T 700 170 T 890 130" fill="none" stroke-width="2.5"/>
+    <path d="M 80 240 Q 200 280 320 230 T 490 290 T 680 240 T 920 280" fill="none" stroke-width="2"/>
+    <path d="M 40 400 Q 180 380 310 430 T 510 390 T 730 450 T 950 410" fill="none" stroke-width="2.2"/>
+    <path d="M 90 530 Q 240 570 380 520 T 590 580 T 820 540" fill="none" stroke-width="2"/>
+  </g>
+
+  <!-- Blisters and punctures -->
+  <ellipse cx="280" cy="190" rx="45" ry="25" fill="#201E1C" stroke="#161413" stroke-width="2"/>
+  <ellipse cx="640" cy="340" rx="60" ry="32" fill="#1C1A18" stroke="#141211" stroke-width="2.5"/>
+  <ellipse cx="420" cy="480" rx="35" ry="20" fill="#22201E" stroke="#181615" stroke-width="2"/>
+
+  <!-- Ponding Water with rust deposits -->
+  <ellipse cx="500" cy="310" rx="260" ry="110" fill="url(#pondGrad)"/>
+  <path d="M 320 290 Q 500 260 680 300 Q 640 370 470 360 Q 340 350 320 290 Z" fill="#222623" opacity="0.8" stroke="#3D3425" stroke-width="3"/>
+  <!-- Rust staining -->
+  <path d="M 680 280 C 730 310 750 350 720 370" stroke="#7A3D1E" stroke-width="8" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 330 270 C 310 320 320 360 360 380" stroke="#683419" stroke-width="6" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- Failed flashing around curb -->
+  <rect x="740" y="100" width="180" height="130" fill="#292623" stroke="#181614" stroke-width="2"/>
+  <path d="M 740 230 L 920 230" stroke="#A83232" stroke-width="4" stroke-dasharray="8,6"/>
+  <text x="745" y="255" font-family="'Inter', sans-serif" font-size="12" fill="#E66767" font-weight="700">FAILED PERIMETER FLASHING</text>
+
+  <!-- Identification Overlay -->
+  <rect x="30" y="30" width="280" height="48" fill="#0A0C0E" rx="4" opacity="0.85"/>
+  <text x="45" y="60" font-family="'Inter', sans-serif" font-weight="800" font-size="14" fill="#EF4444" letter-spacing="1.5">BEFORE: SEVERE DEGRADATION</text>
+  <text x="45" y="95" font-family="'Inter', monospace" font-size="11" fill="#A7ADB2">Saturated insulation &amp; seam failure</text>
+</svg>

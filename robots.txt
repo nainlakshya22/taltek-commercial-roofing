@@ -1,0 +1,11 @@
+# TALTEK Commercial Roofing - Robots Exclusion Protocol
+# https://taltekroofing.com/
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /scratch/
+Disallow: /brain/
+
+# Sitemap Location
+Sitemap: https://taltekroofing.com/sitemap.xml

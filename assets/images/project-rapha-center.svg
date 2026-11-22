@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Rapha Center Commercial Roofing Project">
+  <defs>
+    <linearGradient id="p4Sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#101419"/><stop offset="100%" stop-color="#242C36"/>
+    </linearGradient>
+    <linearGradient id="p4Roof" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5EAEF"/><stop offset="100%" stop-color="#C2CCD6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#p4Sky)"/>
+  <!-- Commercial Center Facade -->
+  <rect x="80" y="240" width="640" height="240" fill="#1A2027" stroke="#2E3846" stroke-width="2"/>
+  <!-- TPO Roof with mechanical fastener layout -->
+  <polygon points="60,240 740,240 680,120 120,120" fill="url(#p4Roof)" stroke="#7D8D9E" stroke-width="2"/>
+  <!-- Fastener plates simulation -->
+  <g fill="#D87535" opacity="0.7">
+    <circle cx="200" cy="180" r="3"/><circle cx="280" cy="180" r="3"/><circle cx="360" cy="180" r="3"/>
+    <circle cx="440" cy="180" r="3"/><circle cx="520" cy="180" r="3"/><circle cx="600" cy="180" r="3"/>
+  </g>
+  <!-- Seam Lines -->
+  <line x1="260" y1="120" x2="240" y2="240" stroke="#8594A3" stroke-width="1.8"/>
+  <line x1="420" y1="120" x2="420" y2="240" stroke="#8594A3" stroke-width="1.8"/>
+  <line x1="580" y1="120" x2="600" y2="240" stroke="#8594A3" stroke-width="1.8"/>
+  <!-- Badge -->
+  <rect x="40" y="30" width="310" height="58" fill="#0A0C0E" rx="4" stroke="#D87535" stroke-width="1.5"/>
+  <text x="56" y="54" font-family="'Inter', sans-serif" font-weight="800" font-size="13" fill="#F5F4F0" letter-spacing="1">RAPHA CENTER</text>
+  <text x="56" y="73" font-family="'Inter', sans-serif" font-size="11" fill="#D87535">10,500 SQ FT • 60-MIL TPO • MANCHESTER, TN</text>
+</svg>

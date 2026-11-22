@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" fill="none" role="img" aria-label="EPDM Rubber Roofing System Assembly Diagram">
+  <rect width="600" height="360" rx="12" fill="#12161A" stroke="#29313A" stroke-width="1.5"/>
+  <text x="30" y="40" font-family="'Inter', sans-serif" font-weight="800" font-size="16" fill="#F5F4F0">EPDM RUBBER MEMBRANE // CROSS-SECTION</text>
+  <text x="30" y="60" font-family="'Inter', monospace" font-size="11" fill="#D87535">SYNTHETIC ETHYLENE PROPYLENE DIENE MONOMER</text>
+  
+  <!-- Layer 1: EPDM Membrane -->
+  <rect x="30" y="90" width="540" height="26" fill="#1F2328" stroke="#48515C" stroke-width="1.5" rx="3"/>
+  <text x="45" y="107" font-family="'Inter', sans-serif" font-weight="700" font-size="11" fill="#F5F4F0">1. 60-MIL NON-REINFORCED OR 75-MIL REINFORCED EPDM RUBBER</text>
+  
+  <!-- Layer 2: Primer & Factory Seam Tape -->
+  <rect x="30" y="122" width="540" height="18" fill="#D87535" opacity="0.9" rx="2"/>
+  <text x="45" y="135" font-family="'Inter', sans-serif" font-weight="700" font-size="9" fill="#F5F4F0">2. SECURETAPE FACTORY-APPLIED DOUBLE SEAM WATERPROOF BOND</text>
+
+  <!-- Layer 3: High Density Polyiso Cover Board -->
+  <rect x="30" y="146" width="540" height="30" fill="#4B5663" rx="3"/>
+  <text x="45" y="165" font-family="'Inter', sans-serif" font-weight="600" font-size="10" fill="#F5F4F0">3. 1/2" HIGH-DENSITY ISO COVER BOARD (PUNCTURE SHIELD)</text>
+
+  <!-- Layer 4: Base Insulation -->
+  <rect x="30" y="182" width="540" height="55" fill="#2E3742" stroke="#414D5C" rx="3"/>
+  <text x="45" y="208" font-family="'Inter', sans-serif" font-weight="700" font-size="11" fill="#F5F4F0">4. TWO LAYERS TAPERED POLYISOCYANURATE (THERMAL BARRIER)</text>
+  <text x="45" y="226" font-family="'Inter', monospace" font-size="10" fill="#D87535">THERMAL EXPANSION FLEXIBILITY: 300% ELONGATION CAPABILITY</text>
+
+  <!-- Layer 5: Concrete/Metal Deck -->
+  <rect x="30" y="243" width="540" height="40" fill="#1A2027" stroke="#37414E" rx="3"/>
+  <text x="45" y="268" font-family="'Inter', sans-serif" font-weight="600" font-size="10" fill="#A7ADB2">5. STRUCTURAL ROOF SUBSTRATE (CONCRETE SLAB OR STEEL)</text>
+
+  <!-- Legend Bottom -->
+  <text x="30" y="320" font-family="'Inter', monospace" font-size="10" fill="#A7ADB2">SPECIFICATION: ASTM D4637 // 30+ YEAR DESIGN LIFE // THERMAL CYCLING RESISTANT</text>
+</svg>

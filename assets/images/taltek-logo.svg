@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" fill="none" role="img" aria-label="TALTEK Commercial Roofing Logo">
+  <defs>
+    <linearGradient id="taltekOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E58646" />
+      <stop offset="100%" stop-color="#D87535" />
+    </linearGradient>
+    <linearGradient id="steelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5F4F0" />
+      <stop offset="100%" stop-color="#A7ADB2" />
+    </linearGradient>
+  </defs>
+  <!-- Architectural Emblem -->
+  <g transform="translate(6, 6)">
+    <!-- Base industrial angle / structural truss -->
+    <path d="M 4 48 L 26 8 L 48 48 Z" stroke="#3A4048" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+    <path d="M 12 48 L 26 22 L 40 48" stroke="#3A4048" stroke-width="1.5" fill="none"/>
+    <!-- Precision Copper Peak / Roof Membrane Chevron -->
+    <path d="M 16 34 L 26 14 L 36 34" stroke="url(#taltekOrange)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="26" cy="14" r="3" fill="#D87535" />
+    <!-- Horizontal datum bar -->
+    <line x1="0" y1="48" x2="52" y2="48" stroke="url(#taltekOrange)" stroke-width="2.5" stroke-linecap="square"/>
+    <!-- Precision ticks -->
+    <line x1="26" y1="48" x2="26" y2="52" stroke="#D87535" stroke-width="2"/>
+    <line x1="6" y1="48" x2="6" y2="51" stroke="#A7ADB2" stroke-width="1.5"/>
+    <line x1="46" y1="48" x2="46" y2="51" stroke="#A7ADB2" stroke-width="1.5"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="74" y="38" font-family="'Inter', 'Manrope', 'Segoe UI', -apple-system, sans-serif" font-weight="900" font-size="28" letter-spacing="4" fill="#F5F4F0">TALTEK</text>
+  <text x="75" y="52" font-family="'Inter', 'Manrope', 'Segoe UI', -apple-system, sans-serif" font-weight="600" font-size="8.5" letter-spacing="3.2" fill="#A7ADB2">COMMERCIAL ROOFING</text>
+  <circle cx="258" cy="49" r="1.5" fill="#D87535"/>
+  <text x="264" y="52" font-family="'Inter', sans-serif" font-weight="500" font-size="8" letter-spacing="2" fill="#D87535">EST. 2009</text>
+</svg>
