@@ -1,0 +1,14 @@
+# Ignore local development server and backend files for pure static frontend Vercel deployment
+server.py
+*.py
+api/
+build_*.py
+generate_*.py
+verify_*.py
+test_*.py
+security_audit.py
+run_*.py
+audit_*.py
+download_*.py
+screenshots_qa/
+*.log

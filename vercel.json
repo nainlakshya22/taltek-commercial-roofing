@@ -14,11 +14,5 @@
         { "key": "Content-Security-Policy", "value": "default-src 'self' 'unsafe-inline' data: https:; img-src 'self' data: https:; font-src 'self' https: data:; script-src 'self' 'unsafe-inline' https:; connect-src 'self' https:; frame-src 'self' https://maps.google.com https://www.google.com;" }
       ]
     }
-  ],
-  "rewrites": [
-    { "source": "/api/quote", "destination": "/api/quote.py" },
-    { "source": "/api/privacy-request", "destination": "/api/privacy_request.py" },
-    { "source": "/api/privacy_request", "destination": "/api/privacy_request.py" },
-    { "source": "/api/health", "destination": "/api/health.py" }
   ]
 }
