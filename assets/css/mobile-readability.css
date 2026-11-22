@@ -380,8 +380,15 @@ p {
     padding: 6px 0;
   }
   .brand-logo-img {
-    height: 36px;
-    max-width: 170px;
+    height: 42px;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 360px) {
+  .brand-logo-img {
+    height: 38px;
+    max-width: 220px;
   }
 
   /* --- HERO --- */
