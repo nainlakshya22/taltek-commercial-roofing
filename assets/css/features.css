@@ -93,7 +93,7 @@
     align-items: flex-start;
     gap: 4px;
     padding: 8px 12px;
-    font-size: 11px;
+    font-size: 0.8125rem;
     line-height: 1.4;
   }
 }
@@ -358,7 +358,7 @@
   border: 1px solid rgba(245, 158, 11, 0.25);
   border-radius: var(--radius-sm);
   padding: 12px;
-  font-size: 11px;
+  font-size: 0.8125rem;
   color: #D1D5DB;
   line-height: 1.5;
   margin-top: var(--space-4);
@@ -571,7 +571,7 @@
   padding: 4px 10px;
   border-radius: var(--radius-sm);
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 0.8125rem;
   color: var(--copper);
   font-weight: 700;
 }
@@ -757,7 +757,7 @@
   }
   .wizard-step-tab {
     padding: 10px 4px;
-    font-size: 11px;
+    font-size: 0.8125rem;
     min-width: 50%;
   }
   .wizard-content {

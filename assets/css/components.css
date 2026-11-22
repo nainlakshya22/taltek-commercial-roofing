@@ -62,8 +62,8 @@
 
 @media (max-width: 480px) {
   .header-utility-bar {
-    padding: 4px 0;
-    font-size: 11px;
+    padding: 5px 0;
+    font-size: 0.8125rem;
   }
   .utility-right .utility-link:last-child {
     display: none; /* Hide email on narrow screens so single phone line fits centered without clipping */
@@ -198,7 +198,7 @@
 
 .phone-cta-label {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 0.75rem;
   color: var(--copper);
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -717,36 +717,36 @@ select.form-control {
 
 @media (max-width: 420px) {
   .mobile-sticky-inner {
-    gap: 6px;
-    padding: 0 4px;
+    gap: 8px;
+    padding: 0 6px;
   }
   .mobile-sticky-btn {
-    padding: 10px 4px;
-    font-size: 10.5px;
-    letter-spacing: 0.02em;
-    gap: 4px;
+    padding: 11px 6px;
+    font-size: 0.75rem;
+    letter-spacing: 0.03em;
+    gap: 5px;
   }
   .mobile-sticky-btn svg {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     flex-shrink: 0;
   }
 }
 
 @media (max-width: 340px) {
   .mobile-sticky-inner {
-    gap: 4px;
-    padding: 0 2px;
+    gap: 6px;
+    padding: 0 4px;
   }
   .mobile-sticky-btn {
-    padding: 8px 2px;
-    font-size: 9.5px;
-    letter-spacing: 0;
-    gap: 3px;
+    padding: 10px 4px;
+    font-size: 0.6875rem;
+    letter-spacing: 0.01em;
+    gap: 4px;
   }
   .mobile-sticky-btn svg {
-    width: 11px;
-    height: 11px;
+    width: 12px;
+    height: 12px;
     flex-shrink: 0;
   }
 }
@@ -838,10 +838,10 @@ select.form-control {
 
 .chat-bot-badge {
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 0.75rem;
   background: rgba(216, 117, 53, 0.2);
   color: var(--copper);
-  padding: 2px 6px;
+  padding: 3px 8px;
   border-radius: 2px;
   margin-left: 6px;
 }
@@ -893,11 +893,11 @@ select.form-control {
 }
 
 .chat-chip {
-  padding: 5px 10px;
+  padding: 6px 12px;
   background-color: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-full);
-  font-size: 11px;
+  font-size: 0.75rem;
   color: var(--text-secondary);
   white-space: nowrap;
   cursor: pointer;
@@ -938,10 +938,10 @@ select.form-control {
 }
 
 .chat-disclaimer {
-  font-size: 10px;
+  font-size: 0.75rem;
   color: var(--text-muted);
   text-align: center;
-  padding: 4px 12px;
+  padding: 6px 12px;
   background-color: #080A0C;
 }
 
@@ -1034,8 +1034,8 @@ select.form-control {
   .cookie-actions .btn {
     flex: 1;
     min-width: 90px;
-    padding: 10px 12px;
-    font-size: 11px;
+    padding: 12px 14px;
+    font-size: 0.8125rem;
   }
 }
 
@@ -1118,7 +1118,7 @@ select.form-control {
 
 .cookie-cat-badge {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 0.75rem;
   color: var(--text-muted);
 }
 
@@ -1241,10 +1241,10 @@ select.form-control {
 
 .license-tag {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 0.75rem;
   background-color: var(--bg-surface);
   border: 1px solid var(--border-medium);
-  padding: 3px 8px;
+  padding: 4px 10px;
   border-radius: 2px;
   color: var(--text-primary);
 }

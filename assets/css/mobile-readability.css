@@ -1,0 +1,645 @@
+/* ==========================================================================
+   TALTEK COMMERCIAL ROOFING - MOBILE READABILITY & TYPOGRAPHY OPTIMIZATION
+   Senior UI/UX Mobile Typography Specialist Pass
+   Preserves Luxury Industrial Futurism on desktop; ensures comfortable
+   reading on 320px–540px mobile and 768px tablet viewports.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   GLOBAL: Minimum readable font floor & improved line-height defaults
+   -------------------------------------------------------------------------- */
+
+/* Body text must never be below 16px on any device */
+p {
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  line-height: 1.72;
+}
+
+/* Card descriptions: bump from 14px to fluid 15–17px */
+.card-desc {
+  font-size: clamp(0.9375rem, 2.2vw, 1.0625rem);
+  line-height: 1.65;
+}
+
+/* Stat label readability */
+.stat-label {
+  font-size: clamp(0.8125rem, 2vw, 0.875rem);
+}
+
+.stat-subtext {
+  font-size: clamp(0.75rem, 1.8vw, 0.8125rem);
+}
+
+/* Section descriptions */
+.section-desc {
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  line-height: 1.7;
+}
+
+/* Eyebrow labels */
+.eyebrow {
+  font-size: clamp(0.75rem, 1.8vw, 0.8125rem);
+}
+
+/* --------------------------------------------------------------------------
+   MOBILE: 768px and below — Tablets & Mobile Devices
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+
+  /* --- BODY & PARAGRAPH TEXT --- */
+  html {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.72;
+  }
+
+  /* --- HEADINGS: Ensure comfortable sizing --- */
+  h1 { font-size: clamp(1.75rem, 7vw, 2.5rem); line-height: 1.12; }
+  h2 { font-size: clamp(1.4rem, 5.5vw, 2rem); line-height: 1.15; }
+  h3 { font-size: clamp(1.2rem, 4.5vw, 1.65rem); line-height: 1.2; }
+  h4 { font-size: clamp(1.05rem, 3.5vw, 1.3rem); line-height: 1.25; }
+
+  /* --- HEADER UTILITY BAR --- */
+  .header-utility-bar {
+    font-size: 0.8125rem;
+    padding: 7px 0;
+  }
+  .utility-link {
+    font-size: 0.8125rem;
+  }
+
+  /* --- NAVIGATION DRAWER --- */
+  .drawer-link {
+    font-size: 1.125rem;
+    padding: 10px 0;
+  }
+  .drawer-sublink {
+    font-size: 1rem;
+    padding: 6px 0;
+  }
+
+  /* --- BUTTONS --- */
+  .btn {
+    font-size: 0.9375rem;
+    padding: 14px 22px;
+    min-height: 48px;
+  }
+  .btn-sm {
+    font-size: 0.8125rem;
+    padding: 10px 16px;
+    min-height: 44px;
+  }
+  .btn-lg {
+    font-size: 1rem;
+    padding: 16px 24px;
+  }
+
+  /* --- CARDS --- */
+  .industrial-card {
+    padding: var(--space-5);
+  }
+  .card-top-tag {
+    font-size: 0.75rem;
+  }
+  .card-title {
+    font-size: 1.1875rem;
+  }
+  .card-desc {
+    font-size: 0.9375rem;
+    line-height: 1.65;
+  }
+
+  /* --- STAT CARDS --- */
+  .stat-card {
+    padding: var(--space-5);
+  }
+  .stat-label {
+    font-size: 0.8125rem;
+  }
+  .stat-subtext {
+    font-size: 0.75rem;
+  }
+
+  /* --- FORM CONTROLS --- */
+  .form-label {
+    font-size: 0.9375rem;
+  }
+  .form-hint {
+    font-size: 0.8125rem;
+  }
+  .form-control {
+    font-size: 1rem; /* iOS zoom prevention: must be >= 16px */
+    padding: 14px 16px;
+    min-height: 48px;
+  }
+  textarea.form-control {
+    min-height: 120px;
+  }
+  select.form-control {
+    font-size: 1rem;
+    min-height: 48px;
+  }
+  .form-error-msg {
+    font-size: 0.8125rem;
+  }
+  .custom-checkbox,
+  .custom-radio {
+    font-size: 0.9375rem;
+    gap: 12px;
+    min-height: 44px;
+    align-items: center;
+  }
+  .custom-checkbox input[type="checkbox"],
+  .custom-radio input[type="radio"] {
+    width: 22px;
+    height: 22px;
+  }
+
+  /* --- HERO SECTION --- */
+  .hero-section {
+    min-height: calc(100vh - 80px);
+  }
+  .hero-headline {
+    font-size: clamp(2rem, 7.5vw, 3rem);
+    letter-spacing: -0.02em;
+  }
+  .hero-subtext {
+    font-size: clamp(1rem, 3.5vw, 1.15rem);
+    line-height: 1.65;
+  }
+  .hero-badge-tag {
+    font-size: 0.75rem;
+    padding: 8px 14px;
+  }
+  .hero-stat-lbl {
+    font-size: 0.75rem;
+  }
+
+  /* --- ESTIMATOR --- */
+  .tile-label {
+    font-size: 0.75rem;
+  }
+  .range-val-display {
+    font-size: 0.9375rem;
+  }
+  .breakdown-row {
+    font-size: 0.8125rem;
+    padding-bottom: 8px;
+  }
+  .estimator-disclaimer-box {
+    font-size: 0.8125rem;
+    line-height: 1.55;
+    padding: 14px;
+  }
+
+  /* --- BEFORE/AFTER SLIDER --- */
+  .ba-label {
+    font-size: 0.75rem;
+    padding: 6px 12px;
+  }
+
+  /* --- PORTFOLIO FILTER --- */
+  .filter-btn {
+    font-size: 0.8125rem;
+    padding: 10px 16px;
+    min-height: 44px;
+  }
+  .project-location {
+    font-size: 0.75rem;
+  }
+  .project-title {
+    font-size: 1.0625rem;
+  }
+  .project-meta-list {
+    font-size: 0.8125rem;
+  }
+  .project-badge-overlay {
+    font-size: 0.75rem;
+  }
+
+  /* --- REVIEWS --- */
+  .reviewer-name {
+    font-size: 0.9375rem;
+  }
+  .review-date {
+    font-size: 0.8125rem;
+  }
+  .review-text {
+    font-size: 0.9375rem;
+    line-height: 1.65;
+  }
+  .review-source-tag {
+    font-size: 0.75rem;
+  }
+
+  /* --- FINANCING CALCULATOR --- */
+  .financing-calculator-box {
+    padding: var(--space-5);
+  }
+
+  /* --- MULTI-STEP WIZARD --- */
+  .wizard-step-tab {
+    font-size: 0.75rem;
+    padding: 12px 8px;
+  }
+  .wizard-content {
+    padding: var(--space-5);
+  }
+
+  /* --- TEAM --- */
+  .member-role {
+    font-size: 0.75rem;
+  }
+  .member-name {
+    font-size: 1.0625rem;
+  }
+  .member-bio {
+    font-size: 0.9375rem;
+    line-height: 1.65;
+  }
+
+  /* --- FOOTER --- */
+  .site-footer {
+    font-size: 0.9375rem;
+    padding-top: var(--space-10);
+  }
+  .footer-brand-desc {
+    font-size: 0.9375rem;
+    line-height: 1.65;
+  }
+  .footer-col-title {
+    font-size: 0.9375rem;
+  }
+  .footer-nav-link {
+    font-size: 0.9375rem;
+    padding: 3px 0;
+  }
+  .footer-contact-item {
+    font-size: 0.9375rem;
+  }
+  .footer-bottom {
+    font-size: 0.8125rem;
+  }
+  .footer-legal-links a,
+  .footer-legal-links button {
+    font-size: 0.8125rem;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .license-tag {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+
+  /* --- COOKIE BANNER --- */
+  .cookie-title {
+    font-size: 1rem;
+  }
+  .cookie-desc {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+  }
+  .cookie-actions .btn {
+    font-size: 0.8125rem;
+    min-height: 44px;
+    padding: 12px 14px;
+  }
+
+  /* --- CHAT ASSISTANT --- */
+  .chat-bot-name {
+    font-size: 0.9375rem;
+  }
+  .chat-bot-badge {
+    font-size: 0.6875rem;
+  }
+  .chat-bubble {
+    font-size: 0.9375rem;
+    padding: 12px 14px;
+    line-height: 1.55;
+  }
+  .chat-chip {
+    font-size: 0.8125rem;
+    padding: 7px 12px;
+    min-height: 36px;
+  }
+  .chat-input {
+    font-size: 1rem; /* iOS zoom prevention */
+  }
+  .chat-send-btn {
+    font-size: 0.8125rem;
+    padding: 10px 16px;
+    min-height: 44px;
+  }
+  .chat-disclaimer {
+    font-size: 0.6875rem;
+  }
+
+  /* --- MOBILE STICKY ACTION BAR --- */
+  .mobile-sticky-btn {
+    font-size: 0.8125rem;
+    padding: 12px 10px;
+    min-height: 48px;
+    letter-spacing: 0.03em;
+  }
+
+  /* --- GOOGLE MAPS --- */
+  .map-info-bar {
+    padding: 16px;
+  }
+  .map-address-block {
+    min-width: unset;
+  }
+
+  /* --- SECTION SPACING MOBILE --- */
+  .section {
+    padding-top: clamp(2.5rem, 6vw, 4rem);
+    padding-bottom: clamp(2.5rem, 6vw, 4rem);
+  }
+  .section-header {
+    margin-bottom: var(--space-8);
+  }
+
+  /* Touch target minimum 44px for all interactive elements */
+  a, button, [role="button"], input[type="submit"], .filter-btn {
+    min-height: 44px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SMALL MOBILE: 540px and below
+   -------------------------------------------------------------------------- */
+@media (max-width: 540px) {
+
+  /* --- HEADER --- */
+  .header-utility-bar {
+    font-size: 0.8125rem;
+    padding: 6px 0;
+  }
+  .brand-logo-img {
+    height: 36px;
+    max-width: 170px;
+  }
+
+  /* --- HERO --- */
+  .hero-headline {
+    font-size: clamp(1.75rem, 8vw, 2.5rem);
+  }
+  .hero-subtext {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+  .hero-badge-tag {
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+  .hero-stat-val {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+  .hero-stat-lbl {
+    font-size: 0.75rem;
+  }
+
+  /* --- CARDS MORE PADDING --- */
+  .industrial-card {
+    padding: 18px 16px;
+  }
+  .card-desc {
+    font-size: 0.9375rem;
+  }
+
+  /* --- ESTIMATOR --- */
+  .estimator-form-pane,
+  .estimator-summary-pane {
+    padding: 20px 16px;
+  }
+  .calc-price-range {
+    font-size: clamp(1.25rem, 6vw, 1.75rem);
+  }
+
+  /* --- WIZARD FORM --- */
+  .wizard-content {
+    padding: 18px 14px;
+  }
+
+  /* --- FOOTER PADDING --- */
+  .site-footer {
+    padding-top: var(--space-8);
+  }
+  .footer-contact-item {
+    font-size: 0.9375rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   NARROW MOBILE: 420px and below
+   -------------------------------------------------------------------------- */
+@media (max-width: 420px) {
+
+  /* Sticky action bar: Enlarged for readability */
+  .mobile-sticky-btn {
+    font-size: 0.75rem;
+    padding: 11px 6px;
+    gap: 5px;
+    min-height: 46px;
+  }
+  .mobile-sticky-inner {
+    gap: 8px;
+    padding: 0 6px;
+  }
+  .mobile-sticky-btn svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* Cookie banner enlarged */
+  .cookie-actions .btn {
+    font-size: 0.8125rem;
+    padding: 12px 14px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   NARROWEST: 340px and below (small budget Android phones)
+   -------------------------------------------------------------------------- */
+@media (max-width: 340px) {
+
+  .mobile-sticky-btn {
+    font-size: 0.6875rem;
+    padding: 10px 4px;
+    gap: 4px;
+    min-height: 44px;
+    letter-spacing: 0.01em;
+  }
+  .mobile-sticky-btn svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .hero-headline {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    font-size: 0.8125rem;
+    padding: 12px 14px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   INLINE CONTENT & PAGE-SPECIFIC OVERRIDES
+   -------------------------------------------------------------------------- */
+
+/* Service detail pages: Ensure readable content blocks */
+@media (max-width: 768px) {
+  /* Service page editorial content */
+  .service-content p,
+  .service-detail-content p,
+  .editorial-content p,
+  .about-content p,
+  .legal-content p,
+  .faq-answer p,
+  .career-content p,
+  .privacy-content p {
+    font-size: 1rem;
+    line-height: 1.72;
+  }
+
+  /* Service page feature lists */
+  .feature-list li,
+  .benefits-list li,
+  .service-features li,
+  .process-step p,
+  .faq-answer {
+    font-size: 0.9375rem;
+    line-height: 1.65;
+  }
+
+  /* Project case study pages */
+  .case-study-content p,
+  .project-detail-desc {
+    font-size: 1rem;
+    line-height: 1.72;
+  }
+
+  /* Legal/compliance pages */
+  .legal-section p,
+  .legal-section li,
+  .terms-content p,
+  .terms-content li,
+  .privacy-content li {
+    font-size: 0.9375rem;
+    line-height: 1.72;
+  }
+
+  /* Contact info blocks */
+  .contact-info-item,
+  .contact-detail {
+    font-size: 0.9375rem;
+  }
+
+  /* FAQ accordions */
+  .faq-question,
+  .accordion-header {
+    font-size: 1rem;
+    min-height: 48px;
+    padding: 14px 16px;
+  }
+
+  /* Breadcrumbs */
+  .breadcrumb,
+  .breadcrumb-item,
+  .breadcrumb a {
+    font-size: 0.8125rem;
+  }
+
+  /* Page banner subtitles */
+  .page-banner-subtitle,
+  .page-hero-desc {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* Image captions */
+  .image-caption,
+  .photo-caption,
+  figcaption {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  /* Tables on mobile */
+  table {
+    font-size: 0.875rem;
+  }
+  th, td {
+    padding: 10px 12px;
+    font-size: 0.875rem;
+  }
+
+  /* Inline specification badges */
+  .spec-badge,
+  .spec-tag,
+  .certification-tag {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+
+  /* Telemetry / data dashboard labels */
+  .telemetry-label,
+  .data-label,
+  .metric-label {
+    font-size: 0.75rem;
+  }
+  .telemetry-value,
+  .data-value,
+  .metric-value {
+    font-size: 1.25rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   ACCESSIBILITY: WCAG 2.2 AA Touch Target & Contrast
+   -------------------------------------------------------------------------- */
+
+/* Ensure all tappable interactive elements have minimum 44x44px touch target on mobile */
+@media (max-width: 768px) {
+  .btn,
+  .mobile-sticky-btn,
+  .filter-btn,
+  .selector-tile,
+  .drawer-link,
+  .drawer-sublink,
+  .footer-nav-link,
+  .footer-legal-links a,
+  .footer-legal-links button,
+  .cookie-actions .btn,
+  .mobile-nav-toggle {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  /* Preserve hidden state of desktop-only elements on mobile */
+  .phone-cta,
+  .nav-menu,
+  .utility-left,
+  .header-actions .btn {
+    display: none !important;
+  }
+}
+
+/* Focus visible improvement for keyboard navigation */
+@media (max-width: 768px) {
+  :focus-visible {
+    outline: 3px solid var(--copper);
+    outline-offset: 2px;
+  }
+}
