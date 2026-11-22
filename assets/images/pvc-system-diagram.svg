@@ -1,29 +1,81 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" fill="none" role="img" aria-label="PVC Commercial Roofing System Chemical Resistance Diagram">
-  <rect width="600" height="360" rx="12" fill="#12161A" stroke="#29313A" stroke-width="1.5"/>
-  <text x="30" y="40" font-family="'Inter', sans-serif" font-weight="800" font-size="16" fill="#F5F4F0">PVC ROOFING MEMBRANE // CHEMICAL DEFENSE</text>
-  <text x="30" y="60" font-family="'Inter', monospace" font-size="11" fill="#D87535">POLYVINYL CHLORIDE RESTAURANT &amp; INDUSTRIAL SPEC</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="100%" height="auto" fill="none" role="img" aria-label="PVC Chemical Resistant Commercial Roofing System Layer Cross-Section">
+  <!-- Outer Card Container -->
+  <rect width="640" height="400" rx="12" fill="#0C0F12" stroke="#252D37" stroke-width="2"/>
   
-  <!-- Layer 1: PVC Chemical Resistant Cap -->
-  <rect x="30" y="90" width="540" height="28" fill="#F0F4F8" stroke="#8E9AA7" stroke-width="1.5" rx="3"/>
-  <text x="45" y="108" font-family="'Inter', sans-serif" font-weight="700" font-size="11" fill="#111315">1. 60 OR 80-MIL PVC MEMBRANE WITH ELVALOY KEE MOLECULAR PLASTICIZER</text>
+  <!-- Diagram Header -->
+  <g transform="translate(24, 20)">
+    <text x="0" y="14" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-size="18" letter-spacing="0.5" fill="#FFFFFF">PVC ROOFING SYSTEM // MULTI-LAYER ASSEMBLY</text>
+    <text x="0" y="32" font-family="'Inter', monospace" font-weight="800" font-size="11" letter-spacing="1.5" fill="#FF9E59">CHEMICAL &amp; FIRE-RESISTANT KEE ASSEMBLY</text>
+  </g>
   
-  <!-- Layer 2: Chemical & Grease Barrier -->
-  <rect x="30" y="124" width="540" height="24" fill="#10B981" opacity="0.85" rx="3"/>
-  <text x="45" y="140" font-family="'Inter', sans-serif" font-weight="700" font-size="9.5" fill="#FFFFFF">2. ANIMAL FATS, JET FUEL &amp; INDUSTRIAL CHEMICAL BARRIER</text>
+  <!-- Top Divider -->
+  <line x1="24" y1="62" x2="616" y2="62" stroke="#222A35" stroke-width="1.5"/>
 
-  <!-- Layer 3: Gypsum Cover Board -->
-  <rect x="30" y="154" width="540" height="26" fill="#5A6673" rx="3"/>
-  <text x="45" y="171" font-family="'Inter', sans-serif" font-weight="600" font-size="10" fill="#F5F4F0">3. DENSDECK PRIME WATER-RESISTANT FIBERGLASS MAT BOARD</text>
+  <!-- FASTENER ASSEMBLY (Dedicated Column on Right) -->
+  <g transform="translate(562, 74)">
+    <rect x="-16" y="0" width="32" height="9" rx="2.5" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.5"/>
+    <circle cx="0" cy="4.5" r="2" fill="#D87535"/>
+    <line x1="0" y1="9" x2="0" y2="252" stroke="#FF9E59" stroke-width="2.5" stroke-dasharray="6,4"/>
+    <path d="M -4 252 L 0 264 L 4 252 Z" fill="#FF9E59"/>
+    <g transform="translate(0, 276)">
+      <rect x="-38" y="0" width="76" height="28" rx="4" fill="#141922" stroke="#D87535" stroke-width="1.2"/>
+      <text x="0" y="11" font-family="'Inter', sans-serif" font-weight="900" font-size="8.5" fill="#FF9E59" text-anchor="middle" letter-spacing="0.5">MECHANICAL</text>
+      <text x="0" y="22" font-family="'Inter', sans-serif" font-weight="900" font-size="8.5" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">FASTENER</text>
+    </g>
+  </g>
 
-  <!-- Layer 4: Polyiso Insulation -->
-  <rect x="30" y="186" width="540" height="52" fill="#2E3742" stroke="#414D5C" rx="3"/>
-  <text x="45" y="210" font-family="'Inter', sans-serif" font-weight="700" font-size="11" fill="#F5F4F0">4. CONTINUOUS CLOSED-CELL POLYISOCYANURATE BOARD</text>
-  <text x="45" y="226" font-family="'Inter', monospace" font-size="10" fill="#D87535">FIRE RETARDANT UL CLASS A // ASTM D4434 TYPE III</text>
+  <!-- LAYER 1: PVC KEE Membrane -->
+  <g transform="translate(24, 74)">
+    <rect width="488" height="46" rx="6" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+    <rect x="8" y="8" width="32" height="30" rx="4" fill="#0F172A"/>
+    <text x="24" y="29" font-family="'Inter', sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" text-anchor="middle">01</text>
+    <text x="48" y="22" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-size="14" fill="#0F172A" letter-spacing="0.3">PVC KEE MEMBRANE</text>
+    <text x="48" y="37" font-family="'Inter', monospace" font-weight="800" font-size="10.5" fill="#475569">60 / 80-MIL // ELVALOY KEE SOLID PLASTICIZER ALLOY</text>
+  </g>
 
-  <!-- Layer 5: Deck -->
-  <rect x="30" y="244" width="540" height="38" fill="#1F252D" stroke="#37414E" rx="3"/>
-  <text x="45" y="268" font-family="'Inter', sans-serif" font-weight="600" font-size="10" fill="#A7ADB2">5. STRUCTURAL PRECAST CONCRETE OR FLUTED STEEL DECK</text>
+  <!-- LAYER 2: Chemical & Grease Barrier -->
+  <g transform="translate(24, 126)">
+    <rect width="488" height="46" rx="6" fill="#065F46" stroke="#059669" stroke-width="1.5"/>
+    <rect x="8" y="8" width="32" height="30" rx="4" fill="#0F172A"/>
+    <text x="24" y="29" font-family="'Inter', sans-serif" font-weight="900" font-size="14" fill="#34D399" text-anchor="middle">02</text>
+    <text x="48" y="22" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" letter-spacing="0.3">GREASE &amp; OIL BARRIER</text>
+    <text x="48" y="37" font-family="'Inter', monospace" font-weight="800" font-size="10.5" fill="#A7F3D0">ANIMAL FATS, JET FUEL &amp; INDUSTRIAL CHEMICAL PROOF</text>
+  </g>
 
-  <!-- Legend Bottom -->
-  <text x="30" y="320" font-family="'Inter', monospace" font-size="10" fill="#A7ADB2">ROOFTOP GREASE EXHAUST RESISTANCE // MANUFACTURING &amp; PROCESSING FACILITIES</text>
+  <!-- LAYER 3: Gypsum Cover Board -->
+  <g transform="translate(24, 178)">
+    <rect width="488" height="54" rx="6" fill="#334155" stroke="#475569" stroke-width="1.5"/>
+    <rect x="8" y="12" width="32" height="30" rx="4" fill="#0F172A"/>
+    <text x="24" y="33" font-family="'Inter', sans-serif" font-weight="900" font-size="14" fill="#FF9E59" text-anchor="middle">03</text>
+    <text x="48" y="23" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" letter-spacing="0.3">GYPSUM COVER BOARD</text>
+    <text x="48" y="42" font-family="'Inter', monospace" font-weight="800" font-size="10.5" fill="#CBD5E1">DENSDECK PRIME WATER-RESISTANT FIBERGLASS MAT</text>
+  </g>
+
+  <!-- LAYER 4: Polyiso Insulation -->
+  <g transform="translate(24, 238)">
+    <rect width="488" height="44" rx="6" fill="#182232" stroke="#2B3B52" stroke-width="1.5"/>
+    <rect x="8" y="7" width="32" height="30" rx="4" fill="#0F172A"/>
+    <text x="24" y="28" font-family="'Inter', sans-serif" font-weight="900" font-size="14" fill="#FF9E59" text-anchor="middle">04</text>
+    <text x="48" y="21" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-size="13.5" fill="#FFFFFF" letter-spacing="0.3">POLYISO INSULATION</text>
+    <text x="48" y="35" font-family="'Inter', monospace" font-weight="900" font-size="10.5" fill="#FF9E59">CLOSED-CELL CONTINUOUS BOARD // FIRE RETARDANT</text>
+  </g>
+
+  <!-- LAYER 5: Precast Concrete or Steel Deck -->
+  <g transform="translate(24, 288)">
+    <rect width="488" height="52" rx="6" fill="#141920" stroke="#252F3D" stroke-width="1.5"/>
+    <rect x="8" y="11" width="32" height="30" rx="4" fill="#0F172A"/>
+    <text x="24" y="32" font-family="'Inter', sans-serif" font-weight="900" font-size="14" fill="#94A3B8" text-anchor="middle">05</text>
+    <text x="48" y="22" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-size="13.5" fill="#FFFFFF" letter-spacing="0.3">STRUCTURAL ROOF DECK</text>
+    <text x="48" y="36" font-family="'Inter', monospace" font-weight="800" font-size="10.5" fill="#94A3B8">PRECAST CONCRETE OR FLUTED STEEL DECK</text>
+    <path d="M 280 43 L 305 43 L 315 48 L 335 48 L 345 43 L 370 43 L 380 48 L 400 48 L 410 43 L 435 43 L 445 48 L 465 48 L 475 43 L 485 43" stroke="#475569" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Bottom Divider -->
+  <line x1="24" y1="352" x2="616" y2="352" stroke="#222A35" stroke-width="1.5"/>
+
+  <!-- Bottom Specification Footer -->
+  <g transform="translate(24, 376)">
+    <circle cx="5" cy="-4" r="3" fill="#D87535"/>
+    <text x="16" y="0" font-family="'Inter', monospace" font-weight="800" font-size="11" fill="#CBD5E1" letter-spacing="0.5">SPECIFICATION: ASTM D4434 // GREASE EXHAUST RESISTANT // FM 1-90</text>
+  </g>
 </svg>

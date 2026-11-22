@@ -1,29 +1,81 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" fill="none" role="img" aria-label="EPDM Rubber Roofing System Assembly Diagram">
-  <rect width="600" height="360" rx="12" fill="#12161A" stroke="#29313A" stroke-width="1.5"/>
-  <text x="30" y="40" font-family="'Inter', sans-serif" font-weight="800" font-size="16" fill="#F5F4F0">EPDM RUBBER MEMBRANE // CROSS-SECTION</text>
-  <text x="30" y="60" font-family="'Inter', monospace" font-size="11" fill="#D87535">SYNTHETIC ETHYLENE PROPYLENE DIENE MONOMER</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="100%" height="auto" fill="none" role="img" aria-label="EPDM Rubber Commercial Roofing System Layer Cross-Section">
+  <!-- Outer Card Container -->
+  <rect width="640" height="400" rx="12" fill="#0C0F12" stroke="#252D37" stroke-width="2"/>
   
-  <!-- Layer 1: EPDM Membrane -->
-  <rect x="30" y="90" width="540" height="26" fill="#1F2328" stroke="#48515C" stroke-width="1.5" rx="3"/>
-  <text x="45" y="107" font-family="'Inter', sans-serif" font-weight="700" font-size="11" fill="#F5F4F0">1. 60-MIL NON-REINFORCED OR 75-MIL REINFORCED EPDM RUBBER</text>
+  <!-- Diagram Header -->
+  <g transform="translate(24, 20)">
+    <text x="0" y="14" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-size="18" letter-spacing="0.5" fill="#FFFFFF">EPDM RUBBER MEMBRANE // MULTI-LAYER ASSEMBLY</text>
+    <text x="0" y="32" font-family="'Inter', monospace" font-weight="800" font-size="11" letter-spacing="1.5" fill="#FF9E59">SYNTHETIC ETHYLENE PROPYLENE DIENE MONOMER</text>
+  </g>
   
-  <!-- Layer 2: Primer & Factory Seam Tape -->
-  <rect x="30" y="122" width="540" height="18" fill="#D87535" opacity="0.9" rx="2"/>
-  <text x="45" y="135" font-family="'Inter', sans-serif" font-weight="700" font-size="9" fill="#F5F4F0">2. SECURETAPE FACTORY-APPLIED DOUBLE SEAM WATERPROOF BOND</text>
+  <!-- Top Divider -->
+  <line x1="24" y1="62" x2="616" y2="62" stroke="#222A35" stroke-width="1.5"/>
 
-  <!-- Layer 3: High Density Polyiso Cover Board -->
-  <rect x="30" y="146" width="540" height="30" fill="#4B5663" rx="3"/>
-  <text x="45" y="165" font-family="'Inter', sans-serif" font-weight="600" font-size="10" fill="#F5F4F0">3. 1/2" HIGH-DENSITY ISO COVER BOARD (PUNCTURE SHIELD)</text>
+  <!-- FASTENER ASSEMBLY (Dedicated Column on Right) -->
+  <g transform="translate(562, 74)">
+    <rect x="-16" y="0" width="32" height="9" rx="2.5" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.5"/>
+    <circle cx="0" cy="4.5" r="2" fill="#D87535"/>
+    <line x1="0" y1="9" x2="0" y2="252" stroke="#FF9E59" stroke-width="2.5" stroke-dasharray="6,4"/>
+    <path d="M -4 252 L 0 264 L 4 252 Z" fill="#FF9E59"/>
+    <g transform="translate(0, 276)">
+      <rect x="-38" y="0" width="76" height="28" rx="4" fill="#141922" stroke="#D87535" stroke-width="1.2"/>
+      <text x="0" y="11" font-family="'Inter', sans-serif" font-weight="900" font-size="8.5" fill="#FF9E59" text-anchor="middle" letter-spacing="0.5">MECHANICAL</text>
+      <text x="0" y="22" font-family="'Inter', sans-serif" font-weight="900" font-size="8.5" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">FASTENER</text>
+    </g>
+  </g>
 
-  <!-- Layer 4: Base Insulation -->
-  <rect x="30" y="182" width="540" height="55" fill="#2E3742" stroke="#414D5C" rx="3"/>
-  <text x="45" y="208" font-family="'Inter', sans-serif" font-weight="700" font-size="11" fill="#F5F4F0">4. TWO LAYERS TAPERED POLYISOCYANURATE (THERMAL BARRIER)</text>
-  <text x="45" y="226" font-family="'Inter', monospace" font-size="10" fill="#D87535">THERMAL EXPANSION FLEXIBILITY: 300% ELONGATION CAPABILITY</text>
+  <!-- LAYER 1: EPDM Membrane -->
+  <g transform="translate(24, 74)">
+    <rect width="488" height="46" rx="6" fill="#1E2328" stroke="#48515C" stroke-width="1.5"/>
+    <rect x="8" y="8" width="32" height="30" rx="4" fill="#0F172A"/>
+    <text x="24" y="29" font-family="'Inter', sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" text-anchor="middle">01</text>
+    <text x="48" y="22" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" letter-spacing="0.3">EPDM RUBBER MEMBRANE</text>
+    <text x="48" y="37" font-family="'Inter', monospace" font-weight="800" font-size="10.5" fill="#CBD5E1">60-MIL / 75-MIL REINFORCED // 300% ELONGATION</text>
+  </g>
 
-  <!-- Layer 5: Concrete/Metal Deck -->
-  <rect x="30" y="243" width="540" height="40" fill="#1A2027" stroke="#37414E" rx="3"/>
-  <text x="45" y="268" font-family="'Inter', sans-serif" font-weight="600" font-size="10" fill="#A7ADB2">5. STRUCTURAL ROOF SUBSTRATE (CONCRETE SLAB OR STEEL)</text>
+  <!-- LAYER 2: Factory Seam Tape -->
+  <g transform="translate(24, 126)">
+    <rect width="488" height="46" rx="6" fill="#D87535" stroke="#F08A46" stroke-width="1.5"/>
+    <rect x="8" y="8" width="32" height="30" rx="4" fill="#0F172A"/>
+    <text x="24" y="29" font-family="'Inter', sans-serif" font-weight="900" font-size="14" fill="#FF9E59" text-anchor="middle">02</text>
+    <text x="48" y="22" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" letter-spacing="0.3">FACTORY SEAM TAPE BOND</text>
+    <text x="48" y="37" font-family="'Inter', monospace" font-weight="900" font-size="10.5" fill="#14181F">VULCANIZED DOUBLE-SEAM WATERPROOF BARRIER</text>
+  </g>
 
-  <!-- Legend Bottom -->
-  <text x="30" y="320" font-family="'Inter', monospace" font-size="10" fill="#A7ADB2">SPECIFICATION: ASTM D4637 // 30+ YEAR DESIGN LIFE // THERMAL CYCLING RESISTANT</text>
+  <!-- LAYER 3: Polyiso Cover Board -->
+  <g transform="translate(24, 178)">
+    <rect width="488" height="54" rx="6" fill="#334155" stroke="#475569" stroke-width="1.5"/>
+    <rect x="8" y="12" width="32" height="30" rx="4" fill="#0F172A"/>
+    <text x="24" y="33" font-family="'Inter', sans-serif" font-weight="900" font-size="14" fill="#FF9E59" text-anchor="middle">03</text>
+    <text x="48" y="23" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-size="14" fill="#FFFFFF" letter-spacing="0.3">HIGH-DENSITY ISO COVER BOARD</text>
+    <text x="48" y="42" font-family="'Inter', monospace" font-weight="800" font-size="10.5" fill="#CBD5E1">1/2-INCH PUNCTURE &amp; HAIL IMPACT RESISTANT SHIELD</text>
+  </g>
+
+  <!-- LAYER 4: Base Insulation -->
+  <g transform="translate(24, 238)">
+    <rect width="488" height="44" rx="6" fill="#182232" stroke="#2B3B52" stroke-width="1.5"/>
+    <rect x="8" y="7" width="32" height="30" rx="4" fill="#0F172A"/>
+    <text x="24" y="28" font-family="'Inter', sans-serif" font-weight="900" font-size="14" fill="#FF9E59" text-anchor="middle">04</text>
+    <text x="48" y="21" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-size="13.5" fill="#FFFFFF" letter-spacing="0.3">TAPERED POLYISO INSULATION</text>
+    <text x="48" y="35" font-family="'Inter', monospace" font-weight="900" font-size="10.5" fill="#FF9E59">TWO-LAYER THERMAL EXPANSION EXPONENT BARRIER</text>
+  </g>
+
+  <!-- LAYER 5: Structural Roof Deck -->
+  <g transform="translate(24, 288)">
+    <rect width="488" height="52" rx="6" fill="#141920" stroke="#252F3D" stroke-width="1.5"/>
+    <rect x="8" y="11" width="32" height="30" rx="4" fill="#0F172A"/>
+    <text x="24" y="32" font-family="'Inter', sans-serif" font-weight="900" font-size="14" fill="#94A3B8" text-anchor="middle">05</text>
+    <text x="48" y="22" font-family="'Inter', -apple-system, sans-serif" font-weight="900" font-size="13.5" fill="#FFFFFF" letter-spacing="0.3">STRUCTURAL ROOF SUBSTRATE</text>
+    <text x="48" y="36" font-family="'Inter', monospace" font-weight="800" font-size="10.5" fill="#94A3B8">REINFORCED CONCRETE SLAB OR STEEL DECK</text>
+    <path d="M 280 43 L 305 43 L 315 48 L 335 48 L 345 43 L 370 43 L 380 48 L 400 48 L 410 43 L 435 43 L 445 48 L 465 48 L 475 43 L 485 43" stroke="#475569" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Bottom Divider -->
+  <line x1="24" y1="352" x2="616" y2="352" stroke="#222A35" stroke-width="1.5"/>
+
+  <!-- Bottom Specification Footer -->
+  <g transform="translate(24, 376)">
+    <circle cx="5" cy="-4" r="3" fill="#D87535"/>
+    <text x="16" y="0" font-family="'Inter', monospace" font-weight="800" font-size="11" fill="#CBD5E1" letter-spacing="0.5">SPECIFICATION: ASTM D4637 // FM 1-90 APPROVED // 30+ YEAR SERVICE LIFE</text>
+  </g>
 </svg>
