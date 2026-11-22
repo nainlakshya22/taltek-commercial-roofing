@@ -715,6 +715,42 @@ select.form-control {
   }
 }
 
+@media (max-width: 420px) {
+  .mobile-sticky-inner {
+    gap: 6px;
+    padding: 0 4px;
+  }
+  .mobile-sticky-btn {
+    padding: 10px 4px;
+    font-size: 10.5px;
+    letter-spacing: 0.02em;
+    gap: 4px;
+  }
+  .mobile-sticky-btn svg {
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 340px) {
+  .mobile-sticky-inner {
+    gap: 4px;
+    padding: 0 2px;
+  }
+  .mobile-sticky-btn {
+    padding: 8px 2px;
+    font-size: 9.5px;
+    letter-spacing: 0;
+    gap: 3px;
+  }
+  .mobile-sticky-btn svg {
+    width: 11px;
+    height: 11px;
+    flex-shrink: 0;
+  }
+}
+
 /* --------------------------------------------------------------------------
    6. FEATURE 10: INDUSTRIAL AI LIVE CHAT ASSISTANT
    -------------------------------------------------------------------------- */
