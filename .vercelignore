@@ -1,6 +1,8 @@
 # Ignore local development server and backend files for pure static frontend Vercel deployment
+local_server.py
 server.py
 *.py
+requirements.txt
 api/
 build_*.py
 generate_*.py

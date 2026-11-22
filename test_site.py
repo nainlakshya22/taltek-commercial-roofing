@@ -13,7 +13,10 @@ import unittest
 from api.health import handler as HealthHandler
 from api.quote import handler as QuoteHandler
 from api.privacy_request import handler as PrivacyHandler
-from server import TaltekRequestHandler
+try:
+    from local_server import TaltekRequestHandler
+except ImportError:
+    from server import TaltekRequestHandler
 
 class DummySocket:
     def __init__(self, request_bytes=b""):
