@@ -25,7 +25,8 @@ function setupSlider(container) {
     percent = Math.max(0, Math.min(100, percent));
     currentPercentage = percent;
     handle.style.left = `${percent}%`;
-    afterLayer.style.clipPath = `polygon(0 0, ${percent}% 0, ${percent}% 100%, 0 100%)`;
+    // Left side (0 to percent%) reveals BEFORE layer; Right side (percent% to 100%) reveals AFTER layer
+    afterLayer.style.clipPath = `polygon(${percent}% 0, 100% 0, 100% 100%, ${percent}% 100%)`;
     handle.setAttribute('aria-valuenow', Math.round(percent));
   };
 
