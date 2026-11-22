@@ -126,7 +126,7 @@ def validate_all():
         ("02. Interactive Roof Estimator", "roof-estimator-app" in (BASE_DIR / "estimator.html").read_text(encoding="utf-8")),
         ("03. Before/After Draggable Slider", "before-after-container" in home_html and "ba-slider-handle" in home_html),
         ("04. Commercial Portfolio & Filters", "portfolio-filter-bar" in (BASE_DIR / "projects.html").read_text(encoding="utf-8")),
-        ("05. Google Reviews System", "reviews-summary-card" in home_html and "4.8" in home_html),
+        ("05. Customer Reviews & Documentation", "reviews-summary-card" in home_html and "review-card" in home_html),
         ("06. Financing Calculator", "financing-calculator-box" in (BASE_DIR / "financing.html").read_text(encoding="utf-8")),
         ("07. Multi-step Inspection Wizard", "quote-wizard" in (BASE_DIR / "request-inspection.html").read_text(encoding="utf-8")),
         ("08. Interactive Service Area Map", "taltek-service-map" in service_areas_html and "Goodlettsville" in service_areas_html),

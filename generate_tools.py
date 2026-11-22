@@ -80,23 +80,27 @@ def build_estimator_page():
               <div class="option-selector-grid">
                 <button type="button" class="selector-tile system-tile active" data-value="jm-tpo-60">
                   <span class="tile-label">JM 60-Mil TPO</span>
-                  <span style="font-size: 10px; color: var(--text-muted);">20-Yr NDL System</span>
+                  <span style="font-size: 10px; color: var(--text-muted);">20-Yr NDL Eligible</span>
                 </button>
                 <button type="button" class="selector-tile system-tile" data-value="jm-tpo-80">
                   <span class="tile-label">JM 80-Mil Extreme TPO</span>
-                  <span style="font-size: 10px; color: var(--text-muted);">30-Yr NDL Severe Spec</span>
+                  <span style="font-size: 10px; color: var(--text-muted);">25-30 Yr NDL Eligible</span>
                 </button>
-                <button type="button" class="selector-tile system-tile" data-value="carlisle-epdm">
-                  <span class="tile-label">Carlisle EPDM Rubber</span>
-                  <span style="font-size: 10px; color: var(--text-muted);">300% Elongation Flex</span>
+                <button type="button" class="selector-tile system-tile" data-value="elevate-epdm">
+                  <span class="tile-label">Elevate RubberGard EPDM</span>
+                  <span style="font-size: 10px; color: var(--text-muted);">Firestone Single-Ply</span>
+                </button>
+                <button type="button" class="selector-tile system-tile" data-value="gaf-everguard">
+                  <span class="tile-label">GAF EverGuard TPO</span>
+                  <span style="font-size: 10px; color: var(--text-muted);">20-Yr NDL Eligible</span>
                 </button>
                 <button type="button" class="selector-tile system-tile" data-value="pvc-chemical">
                   <span class="tile-label">PVC Chemical/Grease</span>
                   <span style="font-size: 10px; color: var(--text-muted);">Elvaloy KEE Formula</span>
                 </button>
-                <button type="button" class="selector-tile system-tile" data-value="soprema-pmma">
-                  <span class="tile-label">Soprema PMMA</span>
-                  <span style="font-size: 10px; color: var(--text-muted);">Liquid Waterproofing</span>
+                <button type="button" class="selector-tile system-tile" data-value="metal-retrofit">
+                  <span class="tile-label">Flute-Fill Metal Retrofit</span>
+                  <span style="font-size: 10px; color: var(--text-muted);">Standing Seam Overlay</span>
                 </button>
               </div>
             </div>
@@ -143,9 +147,9 @@ def build_estimator_page():
               <h2 style="font-size: 20px; color: var(--text-primary); margin-bottom: 12px;">Budgetary Range</h2>
               
               <div class="calc-result-box">
-                <span style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; font-family: var(--font-mono);">Estimated Total Project Investment</span>
+                <span style="font-size: 11px; color: var(--text-muted); text-transform: uppercase; font-family: var(--font-mono);">Illustrative Budgetary Range (Subject to Physical Core Inspection)</span>
                 <div id="est-price-range" class="calc-price-range">$180,000 – $262,500</div>
-                <div style="font-size: 11px; color: var(--copper); margin-top: 4px;">Includes membrane, tapered polyiso, fasteners &amp; NDL inspection fees</div>
+                <div style="font-size: 11px; color: var(--copper); margin-top: 4px;">Illustrative benchmark for single-ply membrane, tapered polyiso, fasteners &amp; inspection fees</div>
               </div>
 
               <div class="calc-breakdown-list">
@@ -167,17 +171,17 @@ def build_estimator_page():
                 </div>
                 <div class="breakdown-row">
                   <span>Manufacturer Warranty:</span>
-                  <span class="breakdown-val" style="color: var(--status-success);">20-Year NDL Labor &amp; Materials</span>
+                  <span class="breakdown-val" style="color: var(--status-success);">Eligible for Manufacturer NDL Warranty</span>
                 </div>
               </div>
             </div>
 
             <div>
-              <a id="est-transfer-quote-btn" href="request-inspection.html?sqft=25000&system=jm-tpo-60" class="btn btn-primary" style="width: 100%; margin-bottom: 10px;">
-                Lock In Core Sample Inspection &rarr;
+              <a id="est-transfer-quote-btn" href="request-inspection.html?sqft=25000&system=jm-tpo-60" class="btn btn-primary btn-lg" style="width: 100%; margin-bottom: 12px;">
+                Request a Professional Physical Inspection &rarr;
               </a>
               <div class="estimator-disclaimer-box">
-                <strong>LEGAL DISCLAIMER:</strong> This commercial estimator tool provides an automated preliminary mathematical projection for capital budgeting purposes only. It does NOT constitute a formal binding bid, warranty commitment, or guaranteed contract price. Commercial roofing systems require on-site physical core extraction, moisture scanning, and structural deck evaluation by an authorized TALTEK roofing engineer.
+                <strong>LEGAL DISCLAIMER: NON-BINDING PRELIMINARY ESTIMATE.</strong> This interactive calculator provides illustrative industry budget ranges for preliminary capital planning purposes only. It does NOT constitute a formal quotation or contractual offer. Final pricing depends on physical roof core inspection, structural deck condition, moisture scans, building code requirements, insulation R-value specifications, tear-off and disposal logistics, roof accessibility, and selected manufacturer warranty criteria.
               </div>
             </div>
           </div>
@@ -654,7 +658,7 @@ def build_service_areas_page():
                   Live Google Maps
                 </button>
                 <button type="button" class="btn-map-mode" id="btn-show-hubs-tools" onclick="switchMapModeTools('hubs')" style="background: transparent; color: var(--text-secondary); border: none; padding: 6px 14px; font-size: 11px; font-weight: 700; border-radius: 3px; cursor: pointer; text-transform: uppercase; font-family: var(--font-heading); letter-spacing: 0.05em;">
-                  Regional Hubs Network
+                  Southeastern Service Area
                 </button>
               </div>
             </div>
@@ -690,7 +694,7 @@ def build_service_areas_page():
                 <img src="assets/images/southeast-map.png" alt="Clear geographic map of TALTEK 15 Southeastern operating states and Goodlettsville HQ" class="taltek-service-map" width="1000" height="680" style="width: 100%; height: auto; display: block;">
               </picture>
               <div style="background: #0A0C0E; padding: 12px 16px; border-top: 1px solid var(--border-subtle); font-size: 12px; color: var(--text-secondary); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
-                <span>7 Verified Regional Hubs: Tennessee, Alabama, Louisiana, Mississippi, North Carolina, South Carolina, Virginia</span>
+                <span>Southeastern Service Area: Tennessee HQ dispatching commercial crews across Southeastern licensed states</span>
                 <span style="color: var(--copper); font-weight: 700;">Emergency Fleet: (615) 448-6349</span>
               </div>
             </div>
@@ -763,7 +767,7 @@ def build_service_areas_page():
               <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 8px;">
                 <strong>Licensing Board:</strong> Alabama State Licensing Board for General Contractors<br>
                 <strong>Classification:</strong> Commercial Roofing &amp; Sheet Metal Contractor<br>
-                <strong>Regional Operations Hub:</strong> Birmingham Regional Hub<br>
+                <strong>Operations Dispatch:</strong> Dispatched from Goodlettsville HQ<br>
                 <strong>Service Areas:</strong> Birmingham, Huntsville, Mobile, Montgomery, Tuscaloosa
               </p>
             </div>
@@ -799,7 +803,7 @@ def build_service_areas_page():
               <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 8px;">
                 <strong>Licensing Board:</strong> North Carolina Licensing Board for General Contractors<br>
                 <strong>Classification:</strong> Commercial Specialty Building Contractor<br>
-                <strong>Regional Operations Hub:</strong> Charlotte Regional Hub<br>
+                <strong>Operations Dispatch:</strong> Dispatched from Goodlettsville HQ<br>
                 <strong>Service Areas:</strong> Charlotte, Raleigh, Greensboro, Durham, Winston-Salem
               </p>
             </div>
@@ -823,7 +827,7 @@ def build_service_areas_page():
               <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 8px;">
                 <strong>Licensing Board:</strong> Virginia Board for Contractors (DPOR)<br>
                 <strong>Classification:</strong> Class A Commercial Contractor License<br>
-                <strong>Regional Operations Hub:</strong> Richmond Hub<br>
+                <strong>Operations Dispatch:</strong> Dispatched from Goodlettsville HQ<br>
                 <strong>Service Areas:</strong> Richmond, Virginia Beach, Norfolk, Roanoke, Alexandria
               </p>
             </div>

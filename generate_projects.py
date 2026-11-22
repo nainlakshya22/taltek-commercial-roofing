@@ -13,7 +13,18 @@ def build_projects_index():
           <span class="eyebrow">Documented Enterprise Performance</span>
           <h1 class="section-title">Commercial &amp; Industrial Projects</h1>
           <p class="section-desc">
-            Explore authentic commercial installations executed by TALTEK crews across healthcare, manufacturing facilities, retail centers, and commercial towers. Verified project specifications and published manufacturer warranties.
+            Explore commercial installation profiles executed across healthcare, manufacturing facilities, retail centers, and commercial towers. Comprehensive single-ply engineering specifications, core sampling analyses, and manufacturer warranty overviews.
+          </p>
+        </div>
+
+        <!-- Concept Portfolio Notice -->
+        <div style="background: rgba(216, 117, 53, 0.08); border: 1px solid var(--border-accent); border-radius: 6px; padding: 18px 24px; margin-bottom: 32px; max-width: 900px; margin-left: auto; margin-right: auto; text-align: left;">
+          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+            <span style="display: inline-block; width: 8px; height: 8px; background-color: var(--copper); border-radius: 50%;"></span>
+            <strong style="color: var(--copper); font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase;">Architectural Concept Demonstration Portfolio</strong>
+          </div>
+          <p style="font-size: 13px; color: var(--text-secondary); margin: 0; line-height: 1.6;">
+            The project case studies below are representative commercial installation profiles illustrating single-ply roofing engineering assemblies, tapered insulation designs, core sampling analyses, and manufacturer warranty specifications. Published client references, contracted scopes, and project photography are subject to official TALTEK company review and client authorization.
           </p>
         </div>
 
@@ -29,7 +40,7 @@ def build_projects_index():
         </div>
 
         <div id="portfolio-results-count" style="text-align: center; font-family: var(--font-mono); font-size: 12px; color: var(--copper); margin-bottom: 24px;">
-          Showing 5 Verified Case Studies
+          Showing 5 Representative Case Studies
         </div>
 
         <!-- Project Grid -->
@@ -360,9 +371,17 @@ def build_case_studies():
         <section class="section bg-primary" style="padding-top: clamp(4rem, 8vw, 6rem);">
           <div class="container">
             <div style="max-width: 900px;">
-              <span class="eyebrow">VERIFIED CASE STUDY // {c["location"].upper()}</span>
+              <span class="eyebrow">REPRESENTATIVE CASE STUDY // {c["location"].upper()}</span>
               <h1 class="section-title" style="font-size: clamp(2.25rem, 5vw, 3.75rem);">{c["title"]}</h1>
               <p class="section-desc">{c["subtitle"]}</p>
+
+              <!-- Verification Notice -->
+              <div style="background: rgba(216, 117, 53, 0.1); border-left: 3px solid var(--copper); padding: 12px 16px; margin: 20px 0; border-radius: 0 4px 4px 0;">
+                <p style="font-size: 13px; color: var(--text-secondary); margin: 0; line-height: 1.5;">
+                  <strong style="color: var(--copper);">Concept Profile Notice:</strong> This case study illustrates commercial roofing engineering capabilities, substrate assemblies, and manufacturer warranty specifications for concept demonstration purposes. Specific contract details and client references are subject to TALTEK company authorization.
+                </p>
+              </div>
+
               <div style="display: flex; gap: 16px; margin-top: 24px; flex-wrap: wrap;">
                 <span class="tech-badge" style="background: rgba(216,117,53,0.15); border: 1px solid var(--copper); color: var(--copper); padding: 6px 12px; font-family: var(--font-mono); font-size: 12px; border-radius: 4px;">
                   SQUARE FOOTAGE: {c["area"]}
@@ -397,14 +416,14 @@ def build_case_studies():
                   {scope_items}
                 </ul>
 
-                <h3 style="font-size: 20px; color: var(--text-primary); margin-bottom: 12px;">Verified Warranty &amp; Long-Term Performance</h3>
+                <h3 style="font-size: 20px; color: var(--text-primary); margin-bottom: 12px;">Warranty &amp; Long-Term Performance</h3>
                 <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 24px;">{c["warranty_details"]}</p>
               </div>
 
               <!-- Right Column: Project Specifications Card -->
               <div>
                 <div style="background: var(--bg-card); border: 1px solid var(--border-medium); border-radius: 6px; padding: 24px; position: sticky; top: 100px;">
-                  <div style="font-family: var(--font-mono); font-size: 11px; color: var(--copper); font-weight: 700; margin-bottom: 8px;">[ VERIFIED CASE STUDY RECORD ]</div>
+                  <div style="font-family: var(--font-mono); font-size: 11px; color: var(--copper); font-weight: 700; margin-bottom: 8px;">[ REPRESENTATIVE CASE STUDY RECORD ]</div>
                   <h3 style="font-size: 18px; color: var(--text-primary); margin-bottom: 16px;">Project Telemetry</h3>
                   
                   <div style="display: flex; flex-direction: column; gap: 12px; font-size: 13px; border-bottom: 1px solid var(--border-subtle); padding-bottom: 16px; margin-bottom: 20px;">

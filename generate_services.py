@@ -13,7 +13,7 @@ def build_services_overview():
           <span class="eyebrow">Enterprise Solutions</span>
           <h1 class="section-title">Commercial &amp; Industrial Roofing Services</h1>
           <p class="section-desc">
-            Engineered single-ply membranes, capital replacements, preventive maintenance, and 24/7 disaster response across 15 Southeastern states. Certified Master Contractor with Johns Manville, GAF, Carlisle, and Soprema.
+            Engineered single-ply membranes, capital replacements, preventive maintenance, and 24/7 disaster response across 15 Southeastern states. Certified commercial contractor with Johns Manville, GAF, Elevate, CertainTeed, and Versico.
           </p>
         </div>
 
@@ -352,7 +352,7 @@ def build_individual_services():
                 When severe weather strikes—whether hail punctures, high-wind membrane uplift, or structural HVAC curb displacement—every minute of water intrusion damages tenant inventories, delicate computer hardware, and structural building integrity.
               </p>
               <p>
-                TALTEK maintains dedicated emergency crews on 24/7/365 standby. By calling our Goodlettsville dispatch center at <strong>+1 (615) 448-6349</strong>, facility managers secure rapid on-site mobilization across Middle Tennessee and regional Southeastern hubs.
+                TALTEK maintains dedicated emergency crews on 24/7/365 standby. By calling our Goodlettsville dispatch center at <strong>+1 (615) 448-6349</strong>, facility managers secure rapid on-site mobilization across Middle Tennessee and regional Southeastern service territories.
               </p>
               <h3>Stabilization &amp; Insurance Coordination</h3>
               <p>
@@ -376,7 +376,7 @@ def build_individual_services():
             "body": """
               <h2>Proactive Roof Asset Lifecycle Management</h2>
               <p>
-                Major single-ply roofing manufacturers—including Johns Manville, GAF, and Carlisle—explicitly mandate regular maintenance inspections in their warranty terms. Neglecting annual drain clearing or failing to document foreign debris damage can void otherwise valuable 20-year No Dollar Limit policies.
+                Major single-ply roofing manufacturers—including Johns Manville, GAF, and Elevate—explicitly mandate regular maintenance inspections in their warranty terms. Neglecting annual drain clearing or failing to document foreign debris damage can void otherwise valuable 20-year No Dollar Limit policies.
               </p>
               <p>
                 TALTEK's Preventative Maintenance Agreements provide commercial property managers and real estate investment trusts (REITs) with proactive asset care. Our certified inspectors conduct thorough spring and autumn audits, clearing drainage paths, resealing expansion joints, and repairing minor punctures before they turn into building-wide crises.
@@ -417,8 +417,8 @@ def build_individual_services():
               ("Membrane Thickness", "60-Mil (Standard Commercial) or 80-Mil (Extreme Spec)"),
               ("Solar Reflectance", "SRI 95+ (ENERGY STAR &amp; CRRC Certified)"),
               ("Seam Fusion", "Robotic Hot-Air Molecular Weld (ASTM D6878)"),
-              ("Manufacturer Partners", "Johns Manville Peak Advantage, GAF Commercial, Carlisle"),
-              ("Warranty Options", "20-Year, 25-Year, and 30-Year NDL Labor and Materials")
+              ("Manufacturer Partners", "Johns Manville, GAF Commercial, Elevate"),
+              ("Warranty Options", "20-Year, 25-Year, and 30-Year NDL Options Available")
             ]
         },
         {
@@ -663,7 +663,7 @@ def build_individual_services():
               </div>
               <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 6px; padding: 20px;">
                 <h4 style="font-size: 16px; color: var(--text-primary); margin-bottom: 8px;">What warranties are included with this system?</h4>
-                <p style="font-size: 14px; color: var(--text-secondary);">TALTEK provides direct Manufacturer No Dollar Limit (NDL) Warranties for 20, 25, or 30 years backed by Johns Manville, GAF, Carlisle, or Soprema covering 100% of labor and materials, accompanied by TALTEK's 2-Year Contractor Workmanship Warranty.</p>
+                <p style="font-size: 14px; color: var(--text-secondary);">Eligible commercial installations qualify for direct Manufacturer No Dollar Limit (NDL) Warranties (typically 15 to 30 years depending on membrane specification and manufacturer inspection) backed by Johns Manville, GAF, or Elevate, accompanied by TALTEK's Contractor Workmanship Warranty.</p>
               </div>
               <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 6px; padding: 20px;">
                 <h4 style="font-size: 16px; color: var(--text-primary); margin-bottom: 8px;">Do you handle commercial insurance claims for storm damage?</h4>

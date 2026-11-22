@@ -29,19 +29,19 @@ def build_about_page():
               From our first commercial roof installation in 2009, TALTEK has grown into an established Southeastern commercial roofing contractor. Headquartered at 1214 S. Dickerson Rd in Goodlettsville, Tennessee, we manage logistics, fabrication, and crew deployments covering healthcare institutions, massive manufacturing plants, and distribution centers across 15 Southeastern states.
             </p>
             <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 24px;">
-              Over more than a decade of focused operations, we have served more than <strong>10,000 commercial clients</strong> while maintaining a verified <strong>4.8-star customer rating</strong>. We are not generic residential roofers who occasionally bid on commercial jobs; our entire tooling, crane infrastructure, safety culture, and supply chains are engineered strictly for high-load commercial and industrial assets.
+              Over more than a decade of focused operations, we have served more than <strong>10,000 customers</strong> across the Southeastern United States while maintaining an <strong>A+ Better Business Bureau rating</strong> (accredited since 2009). We are not generic residential roofers who occasionally bid on commercial jobs; our entire tooling, crane infrastructure, safety culture, and supply chains are engineered strictly for high-load commercial and industrial assets.
             </p>
 
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; border-top: 1px solid var(--border-subtle); padding-top: 20px;">
               <div>
                 <span style="font-family: var(--font-mono); font-size: 11px; color: var(--copper); font-weight: 700; display:block;">ESTABLISHED RECORD</span>
-                <strong style="font-size: 24px; color: var(--text-primary); display:block;">15+ Years</strong>
-                <span style="font-size: 13px; color: var(--text-secondary);">First Installation 2009</span>
+                <strong style="font-size: 24px; color: var(--text-primary); display:block;">EST. 2009</strong>
+                <span style="font-size: 13px; color: var(--text-secondary);">BBB Accredited A+ Rating</span>
               </div>
               <div>
-                <span style="font-family: var(--font-mono); font-size: 11px; color: var(--copper); font-weight: 700; display:block;">COMMERCIAL TRUST</span>
+                <span style="font-family: var(--font-mono); font-size: 11px; color: var(--copper); font-weight: 700; display:block;">CUSTOMER TRUST</span>
                 <strong style="font-size: 24px; color: var(--text-primary); display:block;">10,000+</strong>
-                <span style="font-size: 13px; color: var(--text-secondary);">Facilities Protected</span>
+                <span style="font-size: 13px; color: var(--text-secondary);">Customers Served</span>
               </div>
             </div>
           </div>
@@ -90,9 +90,9 @@ def build_about_page():
           </div>
           <div class="industrial-card">
             <div class="card-top-tag">04 // DURABILITY</div>
-            <h3 class="card-title">NDL Warranties</h3>
+            <h3 class="card-title">NDL Warranty Options</h3>
             <p class="card-desc">
-              Manufacturer No Dollar Limit (NDL) warranties up to 30 years backed by Johns Manville, GAF, and Carlisle, covering 100% labor and materials.
+              Eligible commercial single-ply installations qualify for manufacturer No Dollar Limit (NDL) warranties up to 30 years backed by Johns Manville, GAF, and Elevate.
             </p>
           </div>
         </div>
@@ -102,9 +102,9 @@ def build_about_page():
     <!-- Accreditation Strip -->
     <section class="section-tight bg-primary" style="border-top: 1px solid var(--border-subtle);">
       <div class="container text-center">
-        <h2 style="font-size: 20px; color: var(--text-primary); margin-bottom: 16px;">National Manufacturer Partnerships</h2>
+        <h2 style="font-size: 20px; color: var(--text-primary); margin-bottom: 16px;">National Manufacturer Partnerships &amp; Industry Standing</h2>
         <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 24px;">
-          <img src="assets/images/certifications.svg" alt="Master Certifications: Johns Manville, GAF, Carlisle, Soprema, OSHA 30, NRCA" style="max-height: 80px; width: auto;">
+          <img src="assets/images/certifications.svg" alt="Certified Partners: Johns Manville, GAF, Elevate, CertainTeed, Versico, OSHA 10/30 Safety, BBB A+ Accredited" style="max-height: 80px; width: auto;">
         </div>
         <a href="request-inspection.html" class="btn btn-primary">Schedule a Commercial Roof Consultation</a>
       </div>
@@ -114,7 +114,7 @@ def build_about_page():
     render_page(
         "about.html",
         "About TALTEK Commercial Roofing | Goodlettsville, TN Enterprise History",
-        "Learn about TALTEK Commercial Roofing: established in 2009, over 10,000 commercial clients served across 15 Southeastern states, headquartered in Goodlettsville, Tennessee.",
+        "Learn about TALTEK Commercial Roofing: established in 2009, over 10,000 customers served across 15 Southeastern states, headquartered in Goodlettsville, Tennessee.",
         "about",
         content,
         path_depth=0
@@ -146,54 +146,54 @@ def build_team_page():
             <!-- JM -->
             <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); padding: 20px; border-radius: 6px;">
               <span style="font-family: var(--font-mono); font-size: 11px; color: var(--copper); font-weight: 700;">JOHNS MANVILLE</span>
-              <h3 style="font-size: 18px; color: var(--text-primary); margin: 6px 0;">Peak Advantage Master Contractor</h3>
+              <h3 style="font-size: 18px; color: var(--text-primary); margin: 6px 0;">Peak Advantage Certified Contractor</h3>
               <p style="font-size: 13px; color: var(--text-secondary);">
-                Elite contractor status authorized to issue 20, 25, and 30-year Johns Manville Peak Advantage NDL warranties covering 100% labor and materials.
+                Certified contractor status authorized to install Johns Manville commercial roofing systems with eligible Peak Advantage NDL warranties covering labor and materials.
               </p>
             </div>
 
             <!-- GAF -->
             <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); padding: 20px; border-radius: 6px;">
               <span style="font-family: var(--font-mono); font-size: 11px; color: var(--copper); font-weight: 700;">GAF COMMERCIAL</span>
-              <h3 style="font-size: 18px; color: var(--text-primary); margin: 6px 0;">Master Select Commercial Contractor</h3>
+              <h3 style="font-size: 18px; color: var(--text-primary); margin: 6px 0;">Certified Commercial Contractor</h3>
               <p style="font-size: 13px; color: var(--text-secondary);">
-                Represents the top 1% of commercial roofing applicators in the United States, certified for GAF EverGuard TPO and Diamond Pledge NDL systems.
+                Certified commercial roofing installer for GAF EverGuard TPO and single-ply commercial assemblies with manufacturer warranty eligibility.
               </p>
             </div>
 
-            <!-- Carlisle -->
+            <!-- Elevate -->
             <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); padding: 20px; border-radius: 6px;">
-              <span style="font-family: var(--font-mono); font-size: 11px; color: var(--copper); font-weight: 700;">CARLISLE SYNTEC</span>
-              <h3 style="font-size: 18px; color: var(--text-primary); margin: 6px 0;">ESP Authorized Applicator</h3>
+              <span style="font-family: var(--font-mono); font-size: 11px; color: var(--copper); font-weight: 700;">ELEVATE (FIRESTONE)</span>
+              <h3 style="font-size: 18px; color: var(--text-primary); margin: 6px 0;">Certified Commercial Applicator</h3>
               <p style="font-size: 13px; color: var(--text-secondary);">
-                Excellence in Single-Ply (ESP) certified installer for Carlisle Sure-Seal EPDM, Sure-Weld TPO, and FleeceBACK high-wind assemblies.
+                Certified installer for Elevate RubberGard EPDM, UltraPly TPO, and commercial low-slope single-ply membrane roofing systems.
               </p>
             </div>
 
-            <!-- Soprema -->
+            <!-- CertainTeed & Versico -->
             <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); padding: 20px; border-radius: 6px;">
-              <span style="font-family: var(--font-mono); font-size: 11px; color: var(--copper); font-weight: 700;">SOPREMA</span>
-              <h3 style="font-size: 18px; color: var(--text-primary); margin: 6px 0;">Certified PMMA Waterproofing Specialist</h3>
+              <span style="font-family: var(--font-mono); font-size: 11px; color: var(--copper); font-weight: 700;">CERTAINTEED &amp; VERSICO</span>
+              <h3 style="font-size: 18px; color: var(--text-primary); margin: 6px 0;">Commercial Roofing Partner</h3>
               <p style="font-size: 13px; color: var(--text-secondary);">
-                Factory-trained applicators for Soprema ALSAN RS cold-fluid polymethyl methacrylate reinforced plaza and terrace waterproofing.
+                Certified commercial applicator for single-ply and modified commercial roofing systems backed by manufacturer warranty options.
               </p>
             </div>
 
             <!-- OSHA -->
             <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); padding: 20px; border-radius: 6px;">
               <span style="font-family: var(--font-mono); font-size: 11px; color: var(--status-success); font-weight: 700;">SAFETY LEADERSHIP</span>
-              <h3 style="font-size: 18px; color: var(--text-primary); margin: 6px 0;">OSHA 30-Hour Supervisor Certified</h3>
+              <h3 style="font-size: 18px; color: var(--text-primary); margin: 6px 0;">OSHA 10 &amp; 30 Safety Standard</h3>
               <p style="font-size: 13px; color: var(--text-secondary);">
-                Every field project superintendent holds active OSHA 30-Hour Construction Safety credentials. Daily fall-protection audits and zero-incident standards.
+                Minimum OSHA 10 for all field employees and OSHA 30 for supervisors and management. Weekly safety training and daily job-site Toolbox Talks.
               </p>
             </div>
 
-            <!-- NRCA -->
+            <!-- BBB -->
             <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); padding: 20px; border-radius: 6px;">
-              <span style="font-family: var(--font-mono); font-size: 11px; color: var(--copper); font-weight: 700;">INDUSTRY BENCHMARK</span>
-              <h3 style="font-size: 18px; color: var(--text-primary); margin: 6px 0;">NRCA Active Commercial Member</h3>
+              <span style="font-family: var(--font-mono); font-size: 11px; color: var(--copper); font-weight: 700;">BETTER BUSINESS BUREAU</span>
+              <h3 style="font-size: 18px; color: var(--text-primary); margin: 6px 0;">BBB Accredited • A+ Rating</h3>
               <p style="font-size: 13px; color: var(--text-secondary);">
-                Active member of the National Roofing Contractors Association, adhering to the highest ethical and technical guidelines in North America.
+                Accredited with the Better Business Bureau since 2009 with continuous A+ rating, reflecting ethical contracting and customer satisfaction.
               </p>
             </div>
           </div>
@@ -569,8 +569,18 @@ def build_contact_page():
 
               <button type="submit" class="btn btn-primary" style="width: 100%;">Transmit Commercial Message</button>
               
-              <div id="contact-success-msg" style="display:none; background: rgba(16, 185, 129, 0.15); border: 1px solid var(--status-success); color: var(--status-success); padding: 12px; border-radius: 4px; margin-top: 16px; font-size: 13px; text-align: center;">
-                &check; Message received securely. A TALTEK representative will respond within 2 to 4 business hours.
+              <div id="contact-success-msg" style="display:none; background: rgba(16, 185, 129, 0.12); border: 1px solid var(--status-success); color: var(--text-primary); padding: 18px; border-radius: 6px; margin-top: 16px; font-size: 13.5px; text-align: left;">
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                  <span style="color: var(--status-success); font-weight: 700; font-size: 16px;">&check;</span>
+                  <strong style="color: var(--status-success);">Inquiry Formatted For Dispatch</strong>
+                </div>
+                <p style="color: var(--text-secondary); margin-bottom: 12px; line-height: 1.5;">
+                  Your message has been pre-formatted for direct transmission to TALTEK commercial estimating. Click below to send via your email client or contact our Goodlettsville dispatch desk directly:
+                </p>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                  <a id="contact-mailto-link" href="mailto:sales@taltekroofing.com" class="btn btn-primary btn-sm">Transmit Via Email Client &rarr;</a>
+                  <a href="tel:+16154486349" class="btn btn-secondary btn-sm">Direct Phone: (615) 448-6349</a>
+                </div>
               </div>
             </form>
           </div>
@@ -643,10 +653,23 @@ def build_contact_page():
       e.preventDefault();
       const hp = this.querySelector('input[name="hp_contact_check"]');
       if (hp && hp.value) return;
+
+      const name = this.querySelector('#contact_name')?.value || '';
+      const email = this.querySelector('#contact_email')?.value || '';
+      const phone = this.querySelector('#contact_phone')?.value || '';
+      const subject = this.querySelector('#contact_subject')?.value || 'Commercial Roofing Inquiry';
+      const message = this.querySelector('#contact_message')?.value || '';
+
+      const mailtoBody = `Name: ${name}%0D%0APhone: ${phone}%0D%0AEmail: ${email}%0D%0ADepartment: ${subject}%0D%0A%0D%0AProject Message:%0D%0A${encodeURIComponent(message)}`;
+      const mailtoHref = `mailto:sales@taltekroofing.com?subject=${encodeURIComponent('TALTEK Commercial Inquiry: ' + subject)}&body=${mailtoBody}`;
+
+      const mailtoBtn = document.getElementById('contact-mailto-link');
+      if (mailtoBtn) mailtoBtn.href = mailtoHref;
+
       const successMsg = document.getElementById('contact-success-msg');
       if (successMsg) {
         successMsg.style.display = 'block';
-        this.reset();
+        successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       }
     });
   </script>

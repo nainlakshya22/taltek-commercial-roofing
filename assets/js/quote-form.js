@@ -209,16 +209,37 @@ function initQuoteWizard() {
           btnSubmit.textContent = 'Submit Inspection Request';
         }
       } catch (err) {
-        console.error('Network or server error during quote submission:', err);
-        const errBanner = document.getElementById('quote-error-banner');
-        if (errBanner) {
-          errBanner.style.display = 'block';
-          errBanner.scrollIntoView({ behavior: 'smooth' });
-        } else {
-          alert('Dispatch Network Notice: Unable to connect to TALTEK dispatch servers. To ensure immediate priority scheduling, please call our 24/7 direct line at (615) 448-6349 or email sales@taltekroofing.com.');
+        console.warn('Backend API endpoint offline or static mode active:', err);
+        // Provide transparent fallback to direct email transmission
+        const name = encodeURIComponent(dataObj.full_name || 'Commercial Client');
+        const phone = encodeURIComponent(dataObj.phone || '');
+        const email = encodeURIComponent(dataObj.business_email || '');
+        const bName = encodeURIComponent(dataObj.building_name || 'Commercial Building');
+        const bType = encodeURIComponent(dataObj.property_type || 'Commercial');
+        const city = encodeURIComponent(dataObj.city || '');
+        const stateVal = encodeURIComponent(dataObj.state || '');
+        const sqft = encodeURIComponent(dataObj.roof_sqft || 'N/A');
+        const service = encodeURIComponent(dataObj.service_requirement || 'Inspection');
+
+        const mailBody = `COMMERCIAL ROOF INSPECTION REQUEST%0D%0A------------------------------------%0D%0ABuilding: ${bName} (${bType})%0D%0ALocation: ${city}, ${stateVal}%0D%0AApprox. Area: ${sqft} sq ft%0D%0ARequired Service: ${service}%0D%0A%0D%0ACONTACT REPRESENTATIVE%0D%0A------------------------------------%0D%0AName: ${name}%0D%0APhone: ${phone}%0D%0AEmail: ${email}`;
+
+        const mailHref = `mailto:sales@taltekroofing.com?subject=Commercial%20Inspection%20Request%20-%20${bName}&body=${mailBody}`;
+
+        // Populate fallback confirmation
+        const refCodeDisplay = document.getElementById('confirmation-ref-code');
+        if (refCodeDisplay) refCodeDisplay.textContent = 'DISPATCH-PENDING-TRANSMISSION';
+
+        const dispatchMsg = document.getElementById('confirmation-dispatch-msg');
+        if (dispatchMsg) {
+          dispatchMsg.innerHTML = `
+            Your inspection request details have been compiled. To ensure immediate scheduling without third-party CRM delay, transmit directly to our Goodlettsville dispatch desk:
+            <div style="margin-top: 16px; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+              <a href="${mailHref}" class="btn btn-primary btn-sm">Transmit via Email Client &rarr;</a>
+              <a href="tel:+16154486349" class="btn btn-secondary btn-sm">Call Dispatch: (615) 448-6349</a>
+            </div>
+          `;
         }
-        btnSubmit.disabled = false;
-        btnSubmit.textContent = 'Retry Submission';
+        goToStep(5);
       }
     });
   }

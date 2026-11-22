@@ -10,3 +10,5 @@ Thumbs.db
 *.log
 .vercel
 screenshots_qa/
+
+server.py

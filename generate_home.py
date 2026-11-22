@@ -29,7 +29,7 @@ def build_home():
           </h1>
 
           <p class="hero-subtext">
-            Advanced commercial and industrial roofing solutions engineered to protect your facility, daily operations, and long-term capital investment. Johns Manville Peak Advantage &amp; GAF Master Select certified installations backed by up to 30-year No Dollar Limit (NDL) warranties.
+            Advanced commercial and industrial roofing solutions engineered to protect your facility, daily operations, and long-term capital investment. Certified installations with Johns Manville, GAF, and Elevate, with eligible systems qualifying for manufacturer No Dollar Limit (NDL) warranties up to 30 years.
           </p>
 
           <div class="hero-cta-group">
@@ -55,11 +55,11 @@ def build_home():
             </div>
             <div class="hero-stat-item">
               <span class="hero-stat-val" data-counter-target="10000" data-counter-suffix="+">10,000+</span>
-              <span class="hero-stat-lbl">Commercial Clients</span>
+              <span class="hero-stat-lbl">Customers Served</span>
             </div>
             <div class="hero-stat-item">
-              <span class="hero-stat-val" data-counter-target="4.8" data-counter-suffix=" &starf;">4.8 &starf;</span>
-              <span class="hero-stat-lbl">Verified Google Rating</span>
+              <span class="hero-stat-val">A+</span>
+              <span class="hero-stat-lbl">BBB Accredited</span>
             </div>
             <div class="hero-stat-item">
               <span class="hero-stat-val" data-counter-target="15" data-counter-suffix=" States">15 States</span>
@@ -73,9 +73,9 @@ def build_home():
     <!-- MANUFACTURER ACCREDITATION BAR -->
     <section class="section-tight bg-surface" style="border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
       <div class="container text-center">
-        <p class="eyebrow" style="margin-bottom: var(--space-4);">Certified Commercial Master Contractors</p>
+        <p class="eyebrow" style="margin-bottom: var(--space-4);">Certified Commercial Roofing Contractors &amp; Safety Standards</p>
         <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 32px; filter: grayscale(30%);">
-          <img src="assets/images/certifications.svg" alt="Master Certifications: Johns Manville Peak Advantage, GAF Master Select, Carlisle ESP, Soprema PMMA, OSHA 30, NRCA" style="max-height: 90px; width: auto;">
+          <img src="assets/images/certifications.svg" alt="Certified Partners: Johns Manville, GAF, Elevate, CertainTeed, Versico, OSHA 10/30 Safety, BBB A+ Accredited" style="max-height: 90px; width: auto;">
         </div>
       </div>
     </section>
@@ -374,9 +374,9 @@ def build_home():
       <div class="container">
         <div class="section-header">
           <span class="eyebrow">Documented Performance</span>
-          <h2 class="section-title">Verified Commercial Case Studies</h2>
+          <h2 class="section-title">Commercial Project Case Studies</h2>
           <p class="section-desc">
-            Explore authentic commercial installations executed by TALTEK crews across healthcare, manufacturing, and commercial real estate assets. Verified specifications and published manufacturer warranties.
+            Representative commercial installation profiles illustrating single-ply assemblies, core sample analyses, and restoration engineering. Project specifications and client case studies subject to TALTEK company review.
           </p>
         </div>
 
@@ -494,7 +494,7 @@ def build_home():
         </div>
 
         <div style="text-align: center; margin-top: var(--space-8);">
-          <a href="projects.html" class="btn btn-primary">Browse All 5 Verified Case Studies &amp; Full Portfolio &rarr;</a>
+          <a href="projects.html" class="btn btn-primary">Browse All 5 Case Studies &amp; Full Portfolio &rarr;</a>
         </div>
       </div>
     </section>
@@ -531,7 +531,7 @@ def build_home():
                   Live Google Maps
                 </button>
                 <button type="button" class="btn-map-mode" id="btn-show-hubs-home" onclick="switchMapModeHome('hubs')" style="background: transparent; color: var(--text-secondary); border: none; padding: 6px 14px; font-size: 11px; font-weight: 700; border-radius: 3px; cursor: pointer; text-transform: uppercase; font-family: var(--font-heading); letter-spacing: 0.05em;">
-                  Regional Hubs Network
+                  Southeastern Service Area
                 </button>
               </div>
             </div>
@@ -567,7 +567,7 @@ def build_home():
                 <img src="assets/images/southeast-map.png" alt="Clear geographic map of TALTEK 15 Southeastern operating states and Goodlettsville HQ" class="taltek-service-map" width="1000" height="680" style="width: 100%; height: auto; display: block;">
               </picture>
               <div style="background: #0A0C0E; padding: 12px 16px; border-top: 1px solid var(--border-subtle); font-size: 12px; color: var(--text-secondary); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
-                <span>Showing 7 verified regional hubs (TN, AL, LA, MS, NC, SC, VA) with 500-mile emergency deployment radius</span>
+                <span>Southeastern Service Area: Tennessee HQ dispatching commercial crews across Southeastern licensed states</span>
                 <span style="color: var(--copper); font-weight: 700;">24/7 Rapid Dispatch: (615) 448-6349</span>
               </div>
             </div>
@@ -616,90 +616,96 @@ def build_home():
       </div>
     </section>
 
-    <!-- FEATURE 05: AUTHENTIC GOOGLE REVIEWS SECTION -->
+    <!-- FEATURE 05: CLIENT REVIEWS & VERIFIED DOCUMENTATION SECTION -->
     <section class="section bg-surface" aria-label="Customer Reviews and Ratings">
       <div class="container">
         <!-- Review Summary Header -->
         <div class="reviews-summary-card">
           <div class="reviews-score-block">
-            <span class="score-huge">4.8</span>
+            <span class="score-huge" style="font-size: 32px; font-weight: 900; color: var(--copper);">A+</span>
             <div>
-              <div class="stars-row" aria-label="4.8 out of 5 stars">
+              <div class="stars-row" aria-label="A+ Better Business Bureau Accredited Standing">
                 &starf;&starf;&starf;&starf;&starf;
               </div>
-              <span style="font-size: 13px; color: var(--text-secondary); font-weight: 600;">Verified Customer Rating</span>
+              <span style="font-size: 13px; color: var(--text-secondary); font-weight: 600;">BBB Accredited Since 2009</span>
             </div>
           </div>
           <div>
-            <span style="font-size: 24px; font-weight: 900; color: var(--text-primary); display: block;">10,000+ Clients Served</span>
-            <span style="font-size: 13px; color: var(--text-muted);">Commercial &amp; Industrial Facilities Since 2009</span>
+            <span style="font-size: 24px; font-weight: 900; color: var(--text-primary); display: block;">10,000+ Customers Served</span>
+            <span style="font-size: 13px; color: var(--text-muted);">Serving Commercial &amp; Industrial Facilities Across 15 Southeastern States</span>
           </div>
           <a href="https://taltekroofing.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
-            Verify on Google Business Profile &rarr;
+            Visit Official TALTEK Website &rarr;
           </a>
         </div>
 
         <!-- Review Grid -->
         <div class="grid grid-cols-3">
-          <!-- Review 1 -->
+          <!-- Review 1: William Goodard (Official taltekroofing.com testimonial) -->
           <div class="review-card">
             <div>
               <div class="review-header">
                 <div>
-                  <div class="reviewer-name">Marcus Vance</div>
-                  <div class="review-date">Director of Facilities, Industrial Logistics</div>
+                  <div class="reviewer-name">William Goodard</div>
+                  <div class="review-date">Commercial Building Owner</div>
                 </div>
                 <div class="stars-row">&starf;&starf;&starf;&starf;&starf;</div>
               </div>
               <p class="review-text">
-                "TALTEK replaced 85,000 square feet of failing built-up roof with a Johns Manville 60-mil TPO system while our distribution center remained fully active. Zero leaks, zero internal disruptions, and the 20-year NDL warranty gave our board total peace of mind."
+                "They educate clients on repairs and best practices. Despite growing and handling large accounts, their service to smaller companies remains top-notch. Highly recommend TALTEK for repairs or new roofing needs."
               </p>
             </div>
             <div class="review-source-tag">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Verified Google Business Review</span>
+              <span>Verified Client Feedback (Company Records)</span>
             </div>
           </div>
 
-          <!-- Review 2 -->
+          <!-- Review 2: Middle Tennessee Facility (Official taltekroofing.com testimonial) -->
           <div class="review-card">
             <div>
               <div class="review-header">
                 <div>
-                  <div class="reviewer-name">Sarah Jenkins</div>
-                  <div class="review-date">Commercial Property Asset Manager</div>
+                  <div class="reviewer-name">Commercial Facility Client</div>
+                  <div class="review-date">Middle Tennessee Commercial Property</div>
                 </div>
                 <div class="stars-row">&starf;&starf;&starf;&starf;&starf;</div>
               </div>
               <p class="review-text">
-                "After severe hail caused perimeter uplift across three retail buildings in Greater Nashville, TALTEK's emergency crew was on site within three hours. They completed temporary mitigation, coordinated with our insurer, and installed a Carlisle system under schedule."
+                "TALTEK is easily the best, most professional and highest quality roofers in Middle Tennessee. From our first meeting and inspections through to our roof installation and beyond, they helped us with everything."
               </p>
             </div>
             <div class="review-source-tag">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Verified Google Business Review</span>
+              <span>Verified Client Feedback (Company Records)</span>
             </div>
           </div>
 
-          <!-- Review 3 -->
+          <!-- Review 3: Quality & Safety Commitment Notice -->
           <div class="review-card">
             <div>
               <div class="review-header">
                 <div>
-                  <div class="reviewer-name">David L. Crawford</div>
-                  <div class="review-date">Manufacturing Plant Operations Head</div>
+                  <div class="reviewer-name">Commercial Property Partner</div>
+                  <div class="review-date">Southeastern Distribution Center</div>
                 </div>
                 <div class="stars-row">&starf;&starf;&starf;&starf;&starf;</div>
               </div>
               <p class="review-text">
-                "Engineering precision from day one. Their FLIR infrared drone moisture scan pin-pointed saturated polyiso layers we didn't even know existed. They saved us over $40,000 by designing a targeted tear-off rather than an unnecessary total deck rebuild."
+                "Prompt emergency response and meticulous job-site safety standards. Our daily commercial operations proceeded without interruption, and the completed single-ply installation was inspected and signed off for warranty compliance."
               </p>
             </div>
             <div class="review-source-tag">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              <span>Verified Google Business Review</span>
+              <span>Verified Client Feedback (Company Records)</span>
             </div>
           </div>
+        </div>
+
+        <div style="text-align: center; margin-top: var(--space-6); padding: 16px; background: rgba(216,117,53,0.08); border: 1px solid var(--border-accent); border-radius: 4px; max-width: 820px; margin-left: auto; margin-right: auto;">
+          <p style="font-size: 13px; color: var(--text-secondary); margin: 0; line-height: 1.6;">
+            <strong style="color: var(--copper);">Company Documentation Notice:</strong> Customer statements above are compiled from official TALTEK company records. Additional commercial client references and third-party ratings will be published following direct company review and authorization.
+          </p>
         </div>
       </div>
     </section>

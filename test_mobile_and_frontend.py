@@ -123,7 +123,7 @@ def test_pages():
         ("02. Interactive Roof Estimator", "roof-estimator-app" in estimator_html and "building-tile" in estimator_html),
         ("03. Before/After Interactive Slider", "before-after-container" in index_html and "ba-slider-handle" in index_html),
         ("04. Commercial Portfolio & Filters", "portfolio-filter-bar" in portfolio_html and "project-grid" in portfolio_html),
-        ("05. Google Reviews System", "reviews-summary-card" in index_html and "4.8" in index_html),
+        ("05. Customer Reviews & Documentation", "reviews-summary-card" in index_html and "review-card" in index_html),
         ("06. Financing Calculator", "financing-calculator-box" in financing_html and "fin-project-cost" in financing_html),
         ("07. Multi-step Inspection/Quote Form", "quote-wizard" in inspection_html and "data-step=" in inspection_html),
         ("08. Interactive Service Area Map", "taltek-service-map" in service_areas_html and "Goodlettsville" in service_areas_html),

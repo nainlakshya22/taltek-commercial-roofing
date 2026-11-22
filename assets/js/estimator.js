@@ -25,11 +25,13 @@ function initRoofEstimator() {
 
   // Base material costs per sq ft (benchmark industrial ranges)
   const systemBaseRates = {
-    'jm-tpo-60': { min: 7.20, max: 10.50, name: 'Johns Manville 60-Mil TPO (20-Yr NDL)' },
-    'jm-tpo-80': { min: 8.50, max: 12.00, name: 'Johns Manville 80-Mil Extreme TPO (25-30 Yr NDL)' },
-    'carlisle-epdm': { min: 7.80, max: 11.20, name: 'Carlisle Sure-Seal EPDM Rubber (20-30 Yr NDL)' },
+    'jm-tpo-60': { min: 7.20, max: 10.50, name: 'Johns Manville 60-Mil TPO (20-Yr NDL Eligible)' },
+    'jm-tpo-80': { min: 8.50, max: 12.00, name: 'Johns Manville 80-Mil Extreme TPO (25-30 Yr NDL Eligible)' },
+    'elevate-epdm': { min: 7.80, max: 11.20, name: 'Elevate RubberGard EPDM (Firestone Single-Ply)' },
+    'carlisle-epdm': { min: 7.80, max: 11.20, name: 'Elevate RubberGard EPDM (Firestone Single-Ply)' },
+    'gaf-everguard': { min: 7.50, max: 10.80, name: 'GAF EverGuard Commercial TPO' },
     'pvc-chemical': { min: 8.90, max: 13.00, name: 'PVC Chemical & Grease Resistant Membrane' },
-    'soprema-pmma': { min: 11.00, max: 16.50, name: 'Soprema PMMA Reinforced Liquid Waterproofing' },
+    'soprema-pmma': { min: 7.50, max: 10.80, name: 'GAF EverGuard Commercial TPO' },
     'metal-retrofit': { min: 8.00, max: 12.50, name: 'Flute-Fill Metal Roof TPO Retrofit' }
   };
 
@@ -91,28 +93,48 @@ function initRoofEstimator() {
         scope: state.projectType,
         condition: state.roofCondition
       });
-      prefillCta.setAttribute('href', `/request-inspection.html?${params.toString()}`);
+      prefillCta.setAttribute('href', `request-inspection.html?${params.toString()}`);
     }
   };
 
   function capitalizeFirstLetter(string) {
+    if (!string) return '';
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
 
   // Handle Area Slider & Input
   if (areaSlider && areaInput) {
     areaSlider.addEventListener('input', (e) => {
-      state.roofArea = parseInt(e.target.value, 10);
-      areaInput.value = state.roofArea;
-      calculateEstimate();
+      const parsed = parseInt(e.target.value, 10);
+      if (!isNaN(parsed) && parsed > 0) {
+        state.roofArea = parsed;
+        areaInput.value = state.roofArea;
+        calculateEstimate();
+      }
     });
 
     areaInput.addEventListener('input', (e) => {
-      let val = parseInt(e.target.value, 10);
+      let raw = e.target.value.replace(/[^0-9]/g, '');
+      if (raw === '') {
+        // Allow user to clear input while typing without breaking calculation
+        return;
+      }
+      let val = parseInt(raw, 10);
+      if (!isNaN(val) && val > 0) {
+        val = Math.max(500, Math.min(1000000, val));
+        state.roofArea = val;
+        areaSlider.value = Math.min(300000, val);
+        calculateEstimate();
+      }
+    });
+
+    areaInput.addEventListener('blur', () => {
+      let val = parseInt(areaInput.value, 10);
       if (isNaN(val) || val < 1000) val = 1000;
-      if (val > 500000) val = 500000;
+      if (val > 1000000) val = 1000000;
       state.roofArea = val;
-      areaSlider.value = val;
+      areaInput.value = val;
+      areaSlider.value = Math.min(300000, val);
       calculateEstimate();
     });
   }

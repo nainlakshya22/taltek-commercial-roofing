@@ -79,13 +79,18 @@ def render_page(filepath, title, desc, canonical_slug, content_html, path_depth=
   
   <!-- Theme Colors -->
   <meta name="theme-color" content="#0A0C0E">
-  <link rel="icon" type="image/svg+xml" href="{root}assets/images/taltek-logo.svg">
+  <link rel="icon" type="image/svg+xml" href="{root}assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="{root}assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{root}assets/images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{root}assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="{root}favicon.ico">
 
   <!-- Design System Stylesheets -->
   <link rel="stylesheet" href="{root}assets/css/variables.css">
   <link rel="stylesheet" href="{root}assets/css/base.css">
   <link rel="stylesheet" href="{root}assets/css/components.css">
   <link rel="stylesheet" href="{root}assets/css/features.css">
+  <link rel="stylesheet" href="{root}assets/css/mobile-readability.css">
   <link rel="stylesheet" href="{root}assets/css/animations.css">
 
   <!-- Schema.org JSON-LD -->

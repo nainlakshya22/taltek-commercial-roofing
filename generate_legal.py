@@ -51,7 +51,7 @@ def build_privacy_policy():
             <strong>TALTEK does not sell or rent personal information to third parties.</strong> We only disclose necessary information to trusted third-party service providers who assist us in operating our business under strict confidentiality agreements:
           </p>
           <ul style="margin: 12px 0 16px 20px;">
-            <li>Certified roofing manufacturers (e.g. Johns Manville, GAF, Carlisle, Soprema) solely for issuing authorized NDL warranties.</li>
+            <li>Certified roofing manufacturers (e.g. Johns Manville, GAF, Elevate) solely for issuing authorized NDL warranties.</li>
             <li>Secure cloud hosting, form management, and database infrastructure providers.</li>
             <li>Analytics and mapping providers, only when authorized under your active cookie preferences.</li>
             <li>Law enforcement or regulatory bodies when required by legal process or state licensing audits.</li>
@@ -211,7 +211,7 @@ def build_terms_page():
 
           <h2 style="color: var(--text-primary); font-size: 22px; margin: 32px 0 12px;">2. Warranties &amp; Manufacturer Representation</h2>
           <p>
-            References on this website to "No Dollar Limit (NDL)" warranties reflect authentic manufacturer warranty programs offered by third-party manufacturers (e.g. Johns Manville, GAF, Carlisle, Soprema). Manufacturer warranties are issued directly by the manufacturer and are governed exclusively by their specific written terms, maintenance conditions, and inspection approvals. TALTEK provides its own separate 2-Year Contractor Workmanship Warranty under executed installation contracts.
+            References on this website to "No Dollar Limit (NDL)" warranties reflect authentic manufacturer warranty programs offered by third-party manufacturers (e.g. Johns Manville, GAF, Elevate). Manufacturer warranties are issued directly by the manufacturer and are governed exclusively by their specific written terms, maintenance conditions, and inspection approvals. TALTEK provides its own separate contractor workmanship warranty under executed installation contracts.
           </p>
 
           <h2 style="color: var(--text-primary); font-size: 22px; margin: 32px 0 12px;">3. Intellectual Property Rights</h2>

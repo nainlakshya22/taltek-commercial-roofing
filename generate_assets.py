@@ -7,37 +7,30 @@ images_dir = os.path.join("assets", "images")
 os.makedirs(images_dir, exist_ok=True)
 
 # 1. TALTEK LOGO (Primary and Light/Dark variants)
-logo_svg = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 64" fill="none" role="img" aria-label="TALTEK Commercial Roofing Logo">
+logo_svg = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 305 58" fill="none" role="img" aria-label="TALTEK Commercial Roofing Logo">
   <defs>
     <linearGradient id="taltekOrange" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#E58646" />
+      <stop offset="0%" stop-color="#FF9E59" />
       <stop offset="100%" stop-color="#D87535" />
-    </linearGradient>
-    <linearGradient id="steelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F5F4F0" />
-      <stop offset="100%" stop-color="#A7ADB2" />
     </linearGradient>
   </defs>
   <!-- Architectural Emblem -->
-  <g transform="translate(6, 6)">
-    <!-- Base industrial angle / structural truss -->
-    <path d="M 4 48 L 26 8 L 48 48 Z" stroke="#3A4048" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
-    <path d="M 12 48 L 26 22 L 40 48" stroke="#3A4048" stroke-width="1.5" fill="none"/>
-    <!-- Precision Copper Peak / Roof Membrane Chevron -->
-    <path d="M 16 34 L 26 14 L 36 34" stroke="url(#taltekOrange)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="26" cy="14" r="3" fill="#D87535" />
-    <!-- Horizontal datum bar -->
-    <line x1="0" y1="48" x2="52" y2="48" stroke="url(#taltekOrange)" stroke-width="2.5" stroke-linecap="square"/>
-    <!-- Precision ticks -->
-    <line x1="26" y1="48" x2="26" y2="52" stroke="#D87535" stroke-width="2"/>
-    <line x1="6" y1="48" x2="6" y2="51" stroke="#A7ADB2" stroke-width="1.5"/>
-    <line x1="46" y1="48" x2="46" y2="51" stroke="#A7ADB2" stroke-width="1.5"/>
+  <g transform="translate(4, 4)">
+    <path d="M 4 44 L 25 6 L 46 44 Z" stroke="#525B66" stroke-width="2.8" fill="none" stroke-linejoin="round"/>
+    <path d="M 11 44 L 25 19 L 39 44" stroke="#404750" stroke-width="2" fill="none"/>
+    <path d="M 15 30 L 25 12 L 35 30" stroke="url(#taltekOrange)" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="25" cy="12" r="3.4" fill="#FF9E59" />
+    <line x1="0" y1="44" x2="50" y2="44" stroke="url(#taltekOrange)" stroke-width="3" stroke-linecap="square"/>
+    <line x1="25" y1="44" x2="25" y2="49" stroke="#FF9E59" stroke-width="2.5"/>
+    <line x1="5" y1="44" x2="5" y2="47" stroke="#A7ADB2" stroke-width="1.8"/>
+    <line x1="45" y1="44" x2="45" y2="47" stroke="#A7ADB2" stroke-width="1.8"/>
   </g>
-  <!-- Wordmark -->
-  <text x="74" y="38" font-family="'Inter', 'Manrope', 'Segoe UI', -apple-system, sans-serif" font-weight="900" font-size="28" letter-spacing="4" fill="#F5F4F0">TALTEK</text>
-  <text x="75" y="52" font-family="'Inter', 'Manrope', 'Segoe UI', -apple-system, sans-serif" font-weight="600" font-size="8.5" letter-spacing="3.2" fill="#A7ADB2">COMMERCIAL ROOFING</text>
-  <circle cx="258" cy="49" r="1.5" fill="#D87535"/>
-  <text x="264" y="52" font-family="'Inter', sans-serif" font-weight="500" font-size="8" letter-spacing="2" fill="#D87535">EST. 2009</text>
+  <!-- Wordmark Line 1: TALTEK + EST. 2009 badge -->
+  <text x="64" y="27" font-family="'Inter', 'Manrope', 'Segoe UI', system-ui, -apple-system, sans-serif" font-weight="900" font-size="28" letter-spacing="2" fill="#FFFFFF">TALTEK</text>
+  <rect x="185" y="11" width="88" height="19" rx="3" fill="rgba(216, 117, 53, 0.15)" stroke="#D87535" stroke-width="1.2"/>
+  <text x="229" y="25" font-family="'Inter', 'Manrope', 'Segoe UI', system-ui, -apple-system, sans-serif" text-anchor="middle" font-size="11.5" font-weight="800" letter-spacing="1.2" fill="#FF9E59">EST. 2009</text>
+  <!-- Wordmark Line 2: COMMERCIAL ROOFING (Massive, Bold, 100% Readable) -->
+  <text x="65" y="49" font-family="'Inter', 'Manrope', 'Segoe UI', system-ui, -apple-system, sans-serif" font-weight="900" font-size="15" letter-spacing="1.6" fill="#FFFFFF">COMMERCIAL ROOFING</text>
 </svg>"""
 
 with open(os.path.join(images_dir, "taltek-logo.svg"), "w", encoding="utf-8") as f:
@@ -523,47 +516,7 @@ cert_svg = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" fil
   </g>
 </svg>"""
 
-with open(os.path.join(images_dir, "certifications.svg"), "w", encoding="utf-8") as f:
-    f.write(cert_svg)
-
-# 6. Service System Diagrams (TPO, EPDM, PVC System Cross Sections)
-tpo_diag = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" fill="none" role="img" aria-label="TPO Single-Ply Roofing System Cross Section Layer Diagram">
-  <rect width="600" height="360" rx="12" fill="#12161A" stroke="#29313A" stroke-width="1.5"/>
-  <text x="30" y="40" font-family="'Inter', sans-serif" font-weight="800" font-size="16" fill="#F5F4F0">TPO ROOFING SYSTEM // MULTI-LAYER ASSEMBLY</text>
-  <text x="30" y="60" font-family="'Inter', monospace" font-size="11" fill="#D87535">THERMOPLASTIC POLYOLEFIN CLASS 1 RATED</text>
-  
-  <!-- Layer 1: Reflective TPO Membrane (Top) -->
-  <rect x="30" y="90" width="540" height="28" fill="#E2E7EC" stroke="#A7ADB2" stroke-width="1.5" rx="3"/>
-  <text x="45" y="108" font-family="'Inter', sans-serif" font-weight="700" font-size="11" fill="#111315">1. 60-MIL OR 80-MIL WHITE TPO MEMBRANE (HEAT-WELDED SEAMS)</text>
-  
-  <!-- Layer 2: High Density Cover Board -->
-  <rect x="30" y="124" width="540" height="24" fill="#697480" rx="3"/>
-  <text x="45" y="140" font-family="'Inter', sans-serif" font-weight="600" font-size="10" fill="#F5F4F0">2. HIGH-DENSITY GYPSUM COVER BOARD (HAIL &amp; PUNCTURE RESISTANT)</text>
-
-  <!-- Layer 3: Polyisocyanurate Insulation (R-30+) -->
-  <rect x="30" y="154" width="540" height="60" fill="#2E3742" stroke="#414D5C" rx="3"/>
-  <text x="45" y="180" font-family="'Inter', sans-serif" font-weight="700" font-size="11" fill="#F5F4F0">3. TAPERED POLYISO INSULATION LAYERS (STAGGERED JOINTS)</text>
-  <text x="45" y="198" font-family="'Inter', monospace" font-size="10" fill="#D87535">CONTINUOUS R-VALUE: R-30.0 TO R-35.0 // ASHRAE 90.1 COMPLIANT</text>
-
-  <!-- Layer 4: Vapor Retarder / Air Barrier -->
-  <rect x="30" y="220" width="540" height="18" fill="#D87535" opacity="0.85" rx="2"/>
-  <text x="45" y="233" font-family="'Inter', sans-serif" font-weight="700" font-size="9" fill="#F5F4F0">4. SELF-ADHERING VAPOR BARRIER // HUMIDITY DEFENSE</text>
-
-  <!-- Layer 5: Heavy Gauge Steel or Concrete Structural Deck -->
-  <rect x="30" y="244" width="540" height="38" fill="#1F252D" stroke="#37414E" rx="3"/>
-  <!-- Corrugation pattern -->
-  <path d="M 40 265 L 70 265 L 85 278 L 115 278 L 130 265 L 160 265 L 175 278 L 205 278 L 220 265 L 250 265 L 265 278 L 295 278 L 310 265 L 340 265 L 355 278 L 385 278 L 400 265 L 430 265 L 445 278 L 475 278 L 490 265 L 520 265 L 535 278 L 560 278" stroke="#525E6E" stroke-width="2" fill="none"/>
-  <text x="45" y="260" font-family="'Inter', sans-serif" font-weight="600" font-size="10" fill="#A7ADB2">5. STRUCTURAL STEEL ROOF DECK (22-GAUGE TYPE B)</text>
-
-  <!-- Mechanical Fasteners Graphic -->
-  <line x1="280" y1="90" x2="280" y2="265" stroke="#F5F4F0" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <circle cx="280" cy="90" r="4" fill="#D87535"/>
-
-  <!-- Legend Bottom -->
-  <text x="30" y="320" font-family="'Inter', monospace" font-size="10" fill="#A7ADB2">SPECIFICATION: ASTM D6878 // UL CLASS A FIRE RATING // FM 1-90 APPROVED</text>
-</svg>"""
-
-with open(os.path.join(images_dir, "tpo-system-diagram.svg"), "w", encoding="utf-8") as f:
-    f.write(tpo_diag)
+# Note: certifications.svg and system diagrams are managed directly with high-resolution responsive versions in assets/images/
+print("Preserving curated vector diagrams and certifications.")
 
 print("Generated core SVG visuals successfully!")
